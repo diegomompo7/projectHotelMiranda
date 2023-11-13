@@ -1,0 +1,44 @@
+.nav {
+  display: flex;
+  background-color: yellow;
+  height: 4.375rem;
+}
+.nav__menu {
+  margin: 0 2rem 0 1.25rem;
+  align-self: center;
+}
+.nav__container {
+  display: flex;
+  align-self: center;
+  width: 110px;
+}
+.nav__container--logo {
+  width: 32%;
+  margin-right: 0.875rem;
+}
+.nav__container--logo img {
+  transform: translateX(100%) translateY(80%);
+}
+.nav__container--name {
+  padding: 0.5rem 0 0.5rem 0;
+}
+.nav__options {
+  flex-grow: 1;
+  align-self: center;
+  text-align: right;
+  margin-right: 1.25rem;
+}
+.nav__options--search {
+  margin-left: 1.5rem;
+}
+
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,40 @@
+.nav{
+    display: flex;
+    background-color: yellow;
+    height: 4.375rem;
+
+    &__menu{
+        margin: 0 2rem 0 1.25rem;
+        align-self: center;
+    }
+    &__container{
+        display: flex;
+        align-self: center;
+        width: 110px;
+
+
+        &--logo{
+        
+            width: 32%;
+            margin-right: 0.875rem;
+
+            & img {
+                transform: translateX(100%) translateY(80%);
+            }
+        }
+        &--name{
+            padding: 0.5rem 0 0.5rem 0;
+        }
+
+    }
+    &__options{
+        flex-grow: 1;
+        align-self: center;
+        text-align: right;
+        margin-right: 1.25rem;
+
+        &--search{
+            margin-left: 1.5rem;
+        }
+    }
+}

@@ -1,6 +1,5 @@
 .nav {
   display: flex;
-  background-color: yellow;
   height: 4.375rem;
 }
 .nav__menu {

@@ -1,8 +1,8 @@
 .about{
     &__text{
-        margin-top: 60px;
-        margin-left: 20px;
-        margin-bottom: 60px;
+        margin-top: 3.75rem;
+        margin-left: 1.25rem;
+        margin-bottom: 3.75rem;
         
         &--subtitle{
             font-size: 0.813rem;
@@ -43,13 +43,13 @@
     &__strong{
         width: 72%;
         margin: 0 auto;
-        padding-bottom: 42px;
+        padding-bottom: 2.625rem;
         &--img{
             width: 100%;
         }
         &--text{
             text-align: center;
-            padding-top: 54px;
+            padding-top: 3.375rem;
             box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
 
             & h3{
@@ -75,7 +75,7 @@
         }
         &--text{
             text-align: center;
-            padding-top: 54px;
+            padding-top: 3.375rem;
             background-color: $fourth-color;
 
             & h3{

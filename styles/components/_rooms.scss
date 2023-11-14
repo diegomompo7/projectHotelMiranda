@@ -1,0 +1,88 @@
+
+.rooms {
+  margin-top: 3.75rem;
+  text-align: center;
+
+  &__subtitle {
+    font-size: 0.875rem;
+    font-family: "Archivo";
+    letter-spacing: 0.2em;
+    color: $sixth-color;
+  }
+  &__title {
+    font-size: 3.5rem;
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    padding-top: 0.429em;
+    margin-bottom: 0.357em;
+  }
+
+  &__swiper {
+    width: 375px;
+    height: 100%;
+    margin: 0 auto;
+
+    --swiper-navigation-color: #111111;
+    --swiper-navigation-size: 1.5rem;
+    --swiper-navigation-top-offset: 35%;
+
+    .swiper-button-next{
+        background-color: white;
+        }
+    
+    &--slider {
+
+        margin-bottom: 100px;
+
+       &--have{
+        background-color: white;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 0.75rem 0;
+        transform: translateY(1.563rem);
+        padding-left: 1rem;
+
+        & svg {
+            margin-right: 1rem;
+        }
+       }
+
+      & img {
+        width: 100%;
+      }
+      &--text {
+        width: 89%;
+        margin: 0 auto;
+
+
+        &--title {
+          font-size: 1.75rem;
+          font-weight: 400;
+          font-family: "Old Standard TT";
+          padding-top: 0.679em;
+          padding-bottom: 0.429em;
+        }
+        &--description {
+          font-size: 0.875rem;
+          font-family: "Roboto";
+          padding: 0 2.929em;
+          color: $sixth-color;
+        }
+        &--price {
+          font-family: "Archivo";
+          font-size: 2rem;
+          color: $third-color;
+          padding-top: 0.375em;
+          display: flex;
+          justify-content: center;
+
+          & p {
+            font-size: 0.815rem;
+            align-self: flex-end;
+            margin-bottom: 0.462em;
+          }
+        }
+      }
+    }
+  }
+}

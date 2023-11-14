@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 .nav {
   display: flex;
   height: 4.375rem;
@@ -296,6 +296,39 @@
   font-size: 0.815rem;
   align-self: flex-end;
   margin-bottom: 0.462em;
+}
+
+.videoIntro {
+  background-color: #222222;
+  padding-left: 20px;
+}
+.videoIntro__text--subtitle {
+  font-size: 0.875rem;
+  letter-spacing: 0.2em;
+  padding-top: 4.571em;
+  color: #BDAC8D;
+}
+.videoIntro__text--title {
+  width: 89%;
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  line-height: 1.071em;
+  padding-top: 0.571em;
+  padding-bottom: 0.286em;
+  color: #FFFFFF;
+}
+.videoIntro__text--description {
+  font-size: 0.875rem;
+  font-family: "Archivo";
+  line-height: 1.714rem;
+  padding-bottom: 2.286em;
+  color: #C2C2C2;
+  width: 93%;
+}
+.videoIntro__video {
+  width: 89.3%;
+  height: auto;
 }
 
 html,

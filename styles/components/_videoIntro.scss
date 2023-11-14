@@ -1,0 +1,35 @@
+.videoIntro{
+    background-color: $fourth-color;
+    padding-left: 20px;
+
+    &__text{
+        &--subtitle{
+            font-size: 0.875rem;
+            letter-spacing: 0.2em;
+            padding-top: 4.571em;
+            color: $seventh-color;
+        }
+        &--title{
+            width: 89%;
+            font-size: 3.5rem;
+            font-weight: 400;
+            font-family: 'Old Standard TT';
+            line-height: 1.071em;
+            padding-top: 0.571em;
+            padding-bottom: 0.286em;
+            color: $first-color;
+        }
+        &--description{
+            font-size: 0.875rem;
+            font-family: 'Archivo';
+            line-height: 1.714rem;
+            padding-bottom: 2.286em;
+            color: $eighth-color;
+            width: 93%;
+        }
+    }
+    &__video{
+        width: 89.3%;
+        height: auto;
+    }
+}

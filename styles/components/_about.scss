@@ -1,0 +1,42 @@
+.about{
+    &__text{
+        margin-top: 60px;
+        margin-left: 20px;
+        
+        &--subtitle{
+            font-size: 0.813rem;
+            font-family: 'Archivo';
+            color: $sixth-color;
+            padding-top: 2.923em;
+            letter-spacing: 0.215em;
+        }
+        &--title{
+            font-size: 3rem;
+            font-family: 'Old Standard TT';
+            font-weight: 400;
+            padding-top: 0.571em;
+            padding-bottom: 0.25em;
+            line-height: 1.071em;
+        }
+        &--description{
+            font-size: 0.875rem;
+            font-family: 'Archivo';
+            font-weight: 400;
+            line-height: 1.714em;
+            padding-right: 2.143em;
+            padding-bottom: 1.714em;
+        }
+        &--button{
+            width: 57.6%;
+            font-size: 0.875rem;
+            font-family: "Archivo";
+            font-weight: 700;
+            letter-spacing: 0.215em;
+            color: $first-color;
+            background-color: $third-color;
+            padding-top: 1.571em;
+            padding-bottom: 1.643em;
+            border: none;
+        }
+    }
+}

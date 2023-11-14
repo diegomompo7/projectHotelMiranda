@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;@700&display=swap");
 .nav {
   display: flex;
   height: 4.375rem;
@@ -56,6 +57,7 @@
 }
 .header__options button {
   color: #FFFFFF;
+  font-family: "Archivo";
   margin-left: 1.429em;
   font-size: 0.875rem;
   width: 57.6%;
@@ -66,11 +68,101 @@
   margin-bottom: 1.714em;
   background-color: #BEAD8E;
   border: none;
+  font-weight: 700;
 }
 .header__options--more {
   margin-bottom: 5.714em;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.33);
+  font-weight: 700;
+}
+
+.check {
+  background-color: #222222;
+}
+.check__form {
+  padding-top: 36px;
+  margin-left: 20px;
+  padding-bottom: 30px;
+  width: 89.3%;
+}
+.check__form label {
+  display: flex;
+  font-size: 1rem;
+  flex-direction: column;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  border-bottom: 1px solid #BEAD8E;
+}
+.check__form svg {
+  margin-top: 1.875em;
+  color: black;
+}
+.check__form input {
+  background-color: transparent;
+  margin-top: 1.875em;
+  border: none;
+  color: #686868;
+  font-size: 0.875rem;
+  font-family: "Roboto";
+  margin-bottom: 1.214em;
+}
+.check__form--arrival {
+  margin-bottom: 1.875em;
+}
+.check__form--departure {
+  margin-bottom: 2.625em;
+}
+.check__form--button {
+  width: 66.6%;
+  font-size: 0.875rem;
+  font-family: "Archivo";
+  color: #FFFFFF;
+  padding: 1.643em 0;
+  letter-spacing: 0.2em;
+  background-color: #BEAD8E;
+  border: none;
+  font-weight: 700;
+}
+
+.about__text {
+  margin-top: 60px;
+  margin-left: 20px;
+}
+.about__text--subtitle {
+  font-size: 0.813rem;
+  font-family: "Archivo";
+  color: #777777;
+  padding-top: 2.923em;
+  letter-spacing: 0.215em;
+}
+.about__text--title {
+  font-size: 3rem;
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  padding-top: 0.571em;
+  padding-bottom: 0.25em;
+  line-height: 1.071em;
+}
+.about__text--description {
+  font-size: 0.875rem;
+  font-family: "Archivo";
+  font-weight: 400;
+  line-height: 1.714em;
+  padding-right: 2.143em;
+  padding-bottom: 1.714em;
+}
+.about__text--button {
+  width: 57.6%;
+  font-size: 0.875rem;
+  font-family: "Archivo";
+  font-weight: 700;
+  letter-spacing: 0.215em;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+  padding-top: 1.571em;
+  padding-bottom: 1.643em;
+  border: none;
 }
 
 html,

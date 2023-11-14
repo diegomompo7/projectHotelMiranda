@@ -1,0 +1,52 @@
+.check{
+    background-color: $fourth-color;
+
+    &__form{
+        padding-top: 36px;
+        margin-left: 20px;
+        padding-bottom: 30px;
+        width: 89.3%;
+
+        & label{
+            display: flex;
+            font-size: 1rem;
+            flex-direction: column;
+            color: $first-color;
+            font-family: 'Roboto';
+            border-bottom: 1px solid $third-color;
+        }
+        & svg{
+            margin-top: 1.875em;
+            color: black;
+        }
+
+        & input{
+            background-color: transparent;
+            margin-top: 1.875em;
+            border: none;
+            color: $fifth-color;
+            font-size: 0.875rem;
+            font-family: 'Roboto';
+            margin-bottom: 1.214em;
+        }
+
+        &--arrival{
+            margin-bottom: 1.875em;
+        }
+        &--departure{
+            margin-bottom: 2.625em;
+        }
+
+        &--button{
+            width: 66.6%;
+            font-size: 0.875rem;
+            font-family: 'Archivo';
+            color: #FFFFFF;
+            padding: 1.643em 0;
+            letter-spacing: 0.2em;
+            background-color: $third-color;
+            border: none;
+            font-weight: 700;
+        }
+    }
+}

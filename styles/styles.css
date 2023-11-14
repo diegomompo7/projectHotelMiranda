@@ -45,6 +45,8 @@
   font-family: "Archivo";
   padding-top: 5.679em;
   margin-left: 1.538em;
+  letter-spacing: 0.215em;
+  line-height: 1.385em;
   width: 63%;
 }
 .header__title {
@@ -54,6 +56,7 @@
   margin-left: 0.357em;
   width: 88%;
   font-weight: 400;
+  line-height: 1.071em;
 }
 .header__options button {
   color: #FFFFFF;
@@ -128,6 +131,7 @@
 .about__text {
   margin-top: 60px;
   margin-left: 20px;
+  margin-bottom: 60px;
 }
 .about__text--subtitle {
   font-size: 0.813rem;
@@ -163,6 +167,59 @@
   padding-top: 1.571em;
   padding-bottom: 1.643em;
   border: none;
+}
+.about__strong {
+  width: 72%;
+  margin: 0 auto;
+  padding-bottom: 42px;
+}
+.about__strong--img {
+  width: 100%;
+}
+.about__strong--text {
+  text-align: center;
+  padding-top: 54px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.about__strong--text h3 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  padding-top: 1.133em;
+  padding-bottom: 0.667em;
+}
+.about__strong--text p {
+  font-size: 0.875rem;
+  font-family: "Roboto";
+  padding: 0 2.5em 2.714em 2.5em;
+  line-height: 1.571em;
+}
+.about__luxury {
+  width: 72%;
+  margin: 0 auto;
+}
+.about__luxury--img {
+  width: 100%;
+}
+.about__luxury--text {
+  text-align: center;
+  padding-top: 54px;
+  background-color: #222222;
+}
+.about__luxury--text h3 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  padding-top: 1.133em;
+  padding-bottom: 0.667em;
+  color: #FFFFFF;
+}
+.about__luxury--text p {
+  font-size: 0.875rem;
+  font-family: "Roboto";
+  padding: 0 2.5em 2.714em 2.5em;
+  color: #FFFFFF;
+  line-height: 1.571em;
 }
 
 html,

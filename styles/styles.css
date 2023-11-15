@@ -506,6 +506,38 @@
   padding-bottom: 1.9em;
 }
 
+.stats {
+  margin-top: 3.75em;
+  background-color: #222222;
+  padding-top: 82px;
+}
+.stats__items {
+  width: 56%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.stats__items--card {
+  margin-bottom: 3.75em;
+}
+.stats__items--card h1 {
+  font-size: 3.75rem;
+  font-family: "Roboto";
+  color: #FFFFFF;
+  padding-top: 0.267em;
+}
+.stats__items--card p {
+  font-size: 1rem;
+  font-family: "Roboto";
+  color: #999999;
+  font-weight: bold;
+}
+
+.info {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0 0), url(../../assets/img/backgroundInfo.png);
+}
+
 html,
 * {
   box-sizing: border-box;

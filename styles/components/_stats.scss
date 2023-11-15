@@ -1,0 +1,30 @@
+.stats{
+    margin-top: 3.75em;
+    background-color: $fourth-color;
+    padding-top: 82px;
+
+    &__items{
+        width: 56%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        &--card{
+            margin-bottom: 3.75em;
+
+            & h1{
+                font-size: 3.75rem;
+                font-family: 'Roboto';
+                color: $first-color;
+                padding-top: 0.267em;
+            }
+            & p{
+                font-size: 1rem;
+                font-family: 'Roboto';
+                color: $tenth-color;
+                font-weight: bold;
+            }
+        }
+    }
+}

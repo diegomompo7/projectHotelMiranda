@@ -1,0 +1,78 @@
+.menu{
+    margin-left: 24px;
+    &__subtitle{
+        font-size: 0.875rem;
+        letter-spacing: 0.2em;
+        padding-top: 4.571em;
+        color: $sixth-color;
+    }
+    &__title{
+        font-size: 3.5rem;
+        font-weight: 400;
+        font-family: 'Old Standard TT';
+        line-height: 1.071em;
+        padding-top: 0.429em;
+        padding-bottom: 0.554em;
+        color: $fourth-color;
+    }
+    &__items{
+        &--card{
+            width: 100%;
+            max-width: 375px;
+            display: flex;
+            margin-bottom: 1rem;
+
+            & img {
+                width: 32%;
+            }
+
+            &--text{
+                display: flex;
+                flex-direction: column;
+            }
+            & h3{
+                font-size: 1.5rem;
+                font-weight: 400;
+                font-family: 'Old Standard TT';
+                line-height: 1em;
+                padding-left: 1.25em;
+                padding-bottom: 0.5em;
+                color: $fourth-color;
+            }
+            & p{
+                font-size: 0.875rem;
+                font-family: "Roboto";
+                color: $sixth-color;
+                line-height: 1.714em;
+                padding-left: 2.143em;
+                width: 90%;
+
+              }
+        }
+    }
+    &__button{
+
+        text-align: end;
+
+        & button{
+            border: none;
+            padding: 13px 12px;
+        }
+
+        & svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        &--prev{
+            color: $second-color;
+            background-color: $ninth-color;
+            margin-right: 1rem;
+        }
+
+        &--next{
+            color: $first-color;
+            background-color: $third-color;
+        }
+    }
+}

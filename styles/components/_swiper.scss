@@ -1,0 +1,13 @@
+.swiper-container{
+        --swiper-pagination-color:#BEAD8E;
+        width: 89%;
+        margin: 0 auto;
+}
+    
+.swiper-slider {
+        & img{
+            width:100%;
+            padding-bottom: 1.9em;
+        }
+       
+}

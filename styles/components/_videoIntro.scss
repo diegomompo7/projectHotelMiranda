@@ -32,4 +32,18 @@
         width: 89.3%;
         height: auto;
     }
+    &__button{
+        width: 57.6%;
+        font-size: 0.875rem;
+        font-family: "Archivo";
+        font-weight: 700;
+        letter-spacing: 0.215em;
+        color: $first-color;
+        background-color: $third-color;
+        padding-top: 1.571em;
+        padding-bottom: 1.643em;
+        margin-top: 3.571em;
+        border: none;
+        margin-bottom: 3.429em;
+    }
 }

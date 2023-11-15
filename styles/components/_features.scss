@@ -1,0 +1,63 @@
+.features{
+    &__subtitle{
+        font-size: 0.875rem;
+        letter-spacing: 0.2em;
+        padding-top: 4.571em;
+        color: $sixth-color;
+        text-align: center;
+    }
+    &__title{
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 400;
+        font-family: 'Old Standard TT';
+        line-height: 1.071em;
+        padding-top: 0.429em;
+        padding-bottom: 0.554em;
+        color: $fourth-color;
+    }
+    &__swiper {
+        width: 100%;
+        max-width: 383px;
+        margin: 0 auto;
+
+        --swiper-pagination-color:#BEAD8E;
+
+        &--slider {
+
+            &--number {
+                color: $fourth-color;
+                font-family: "Archivo";
+                opacity: 0.04;
+                font-size: 7.5rem;
+                text-align: right;
+                padding-right: 0.267em;
+            }
+
+            & svg{
+                margin-left: 2.375rem;
+                transform: translateY(-70%);
+            }
+
+            &--title{
+                font-size: 1.875rem;
+                font-weight: 400;
+                font-family: 'Old Standard TT';
+                line-height: 1em;
+                padding-left: 1.267em;
+                padding-bottom: 0.933em;
+                color: $fourth-color;
+            }
+            &--description {
+                font-size: 0.875rem;
+                font-family: "Archivo";
+                padding-left: 2.714em;
+                color: $sixth-color;
+                line-height: 1.714em;
+                padding-bottom: 3.071em;
+                width: 75%;
+              }
+
+        }
+    }
+}

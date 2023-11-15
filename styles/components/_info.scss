@@ -97,7 +97,7 @@
 
     &--card {
         display: flex;
-        margin-bottom: 3.688rem;
+       
       &--text {
         &--title {
           font-size: 1.25rem;
@@ -114,4 +114,10 @@
       }
     }
   }
+}
+.phone, .mail{
+    margin-bottom: 3.688rem;
+}
+.location{
+    padding-bottom: 2em;
 }

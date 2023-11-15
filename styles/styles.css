@@ -624,7 +624,6 @@
 }
 .info__contact--card {
   display: flex;
-  margin-bottom: 3.688rem;
 }
 .info__contact--card--text--title {
   font-size: 1.25rem;
@@ -639,12 +638,25 @@
   margin-left: 1.5em;
 }
 
+.phone, .mail {
+  margin-bottom: 3.688rem;
+}
+
+.location {
+  padding-bottom: 2em;
+}
+
 .footer {
+  padding-top: 1.25em;
+  padding-bottom: 1rem;
   background-color: #F8F8F8;
   margin-left: 1.375em;
   font-family: "Roboto";
   font-size: 1rem;
   font-weight: 700;
+}
+.footer__copy {
+  padding-bottom: 1.5em;
 }
 
 html,

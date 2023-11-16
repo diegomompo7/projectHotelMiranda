@@ -122,7 +122,8 @@
   padding: 1rem;
   margin-right: 1.25rem;
   justify-content: center;
-  width: 156px;
+  width: -moz-max-content;
+  width: max-content;
   margin-left: auto;
   font-size: 1rem;
   font-family: "Archivo";
@@ -686,7 +687,7 @@
 .stats {
   margin-top: 3.75em;
   background-color: #222222;
-  padding-top: 82px;
+  padding-top: 5.125rem;
 }
 .stats__items {
   width: 56%;
@@ -932,6 +933,47 @@
   font-size: 0.875rem;
   font-family: "Oswald";
   padding: 0.857em 1.143em;
+}
+
+.firstDescription {
+  width: 89.3%;
+}
+.firstDescription__text--subtitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-family: "Archivo";
+  padding-top: 2.286em;
+  padding-left: 1.429em;
+  color: #777777;
+}
+.firstDescription__text--title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  padding-top: 0.3em;
+  padding-bottom: 0.25em;
+  color: #222222;
+  padding-left: 0.5em;
+}
+.firstDescription__price {
+  font-family: "Archivo";
+  font-size: 2rem;
+  color: #BEAD8E;
+  padding-top: 0.375em;
+  margin-bottom: 0.5em;
+  display: flex;
+  padding-left: 0.625em;
+}
+.firstDescription__price p {
+  font-size: 0.815rem;
+  align-self: flex-end;
+  margin-bottom: 0.462em;
+}
+
+.roomDetail__img {
+  width: 89.3%;
+  padding-left: 1.25em;
 }
 
 html,

@@ -1,16 +1,16 @@
 @import 'utilities/variables';
 @import 'components/nav';
-@import 'components/header';
-@import 'components/check';
-@import 'components/about';
-@import 'components/rooms';
-@import 'components/videoIntro';
-@import 'components/features';
-@import 'components/menu';
-@import 'components/swiper';
-@import 'components/stats';
-@import 'components/info';
 @import 'components/footer';
+@import 'components/home/header';
+@import 'components/home/check';
+@import 'components/home/about';
+@import 'components/home/rooms';
+@import 'components/home/videoIntro';
+@import 'components/home/features';
+@import 'components/home/menu';
+@import 'components/home/swiper';
+@import 'components/home/stats';
+@import 'components/home/info';
 @import 'base/fonts';
 
 html,

@@ -20,10 +20,14 @@
         width: 100%;
         max-width: 383px;
         margin: 0 auto;
+        padding-bottom: 2.563rem;
+        
 
         --swiper-pagination-color:#BEAD8E;
 
         &--slider {
+            
+            margin-bottom: 2rem;
 
             &--number {
                 color: $fourth-color;
@@ -59,5 +63,19 @@
               }
 
         }
+    }
+}
+.about{
+    background-color: $fourth-color;
+
+    &__slider{
+        background-color: $twelveth-color;
+    }
+    &__number{
+        opacity: 1;
+    }
+    &__text{
+        color: $first-color;
+        
     }
 }

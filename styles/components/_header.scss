@@ -1,7 +1,8 @@
 .header{
-    background-image: linear-gradient(to right, rgba(0,0,0, 0.7) 0 0), url(../assets/img/imgHeader.jpg);
+    background-color: $eleventh-color;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    position: relative;
     color: $first-color;
 
 
@@ -44,6 +45,31 @@
             background-color: transparent;
             border: 1px solid rgba($color: $first-color, $alpha: 0.33);
             font-weight: 700;
+        }
+    }
+    &__nav{
+        background-color: $first-color;
+        color: $fourth-color;
+        display: flex;
+        padding: 1rem;
+        margin-right: 1.25rem;
+        justify-content:  center;
+        width: 156px;
+        margin-left: auto;
+        font-size: 1rem;
+        font-family: "Archivo";
+        font-weight: 700;
+
+        & a {
+            padding: 0 11px;
+            text-decoration: none;
+        }
+
+        &--home, & p{
+            color: $fourth-color;
+        }
+        &--actual{
+            color: $third-color;
         }
     }
 }

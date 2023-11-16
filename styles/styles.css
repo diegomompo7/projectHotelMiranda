@@ -59,7 +59,7 @@
   padding-top: 1.25em;
   padding-bottom: 1rem;
   background-color: #F8F8F8;
-  margin-left: 1.375em;
+  padding-left: 1.375em;
   font-family: "Roboto";
   font-size: 1rem;
   font-weight: 700;
@@ -69,9 +69,10 @@
 }
 
 .header {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0 0), url(../assets/img/imgHeader.jpg);
+  background-color: #333333;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  position: relative;
   color: #FFFFFF;
 }
 .header__subtitle {
@@ -112,6 +113,29 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.33);
   font-weight: 700;
+}
+.header__nav {
+  background-color: #FFFFFF;
+  color: #222222;
+  display: flex;
+  padding: 1rem;
+  margin-right: 1.25rem;
+  justify-content: center;
+  width: 156px;
+  margin-left: auto;
+  font-size: 1rem;
+  font-family: "Archivo";
+  font-weight: 700;
+}
+.header__nav a {
+  padding: 0 11px;
+  text-decoration: none;
+}
+.header__nav--home, .header__nav p {
+  color: #222222;
+}
+.header__nav--actual {
+  color: #BEAD8E;
 }
 
 .check {
@@ -162,19 +186,19 @@
   font-weight: 700;
 }
 
-.about__text {
+.aboutUs__text {
   margin-top: 3.75rem;
   margin-left: 1.25rem;
   margin-bottom: 3.75rem;
 }
-.about__text--subtitle {
+.aboutUs__text--subtitle {
   font-size: 0.813rem;
   font-family: "Archivo";
   color: #777777;
   padding-top: 2.923em;
   letter-spacing: 0.215em;
 }
-.about__text--title {
+.aboutUs__text--title {
   font-size: 3rem;
   font-family: "Old Standard TT";
   font-weight: 400;
@@ -182,7 +206,7 @@
   padding-bottom: 0.25em;
   line-height: 1.071em;
 }
-.about__text--description {
+.aboutUs__text--description {
   font-size: 0.875rem;
   font-family: "Archivo";
   font-weight: 400;
@@ -190,7 +214,7 @@
   padding-right: 2.143em;
   padding-bottom: 1.714em;
 }
-.about__text--button {
+.aboutUs__text--button {
   width: 57.6%;
   font-size: 0.875rem;
   font-family: "Archivo";
@@ -202,45 +226,45 @@
   padding-bottom: 1.643em;
   border: none;
 }
-.about__strong {
+.aboutUs__strong {
   width: 72%;
   margin: 0 auto;
   padding-bottom: 2.625rem;
 }
-.about__strong--img {
+.aboutUs__strong--img {
   width: 100%;
 }
-.about__strong--text {
+.aboutUs__strong--text {
   text-align: center;
   padding-top: 3.375rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.about__strong--text h3 {
+.aboutUs__strong--text h3 {
   font-size: 1.875rem;
   font-weight: 400;
   font-family: "Old Standard TT";
   padding-top: 1.133em;
   padding-bottom: 0.667em;
 }
-.about__strong--text p {
+.aboutUs__strong--text p {
   font-size: 0.875rem;
   font-family: "Roboto";
   padding: 0 2.5em 2.714em 2.5em;
   line-height: 1.571em;
 }
-.about__luxury {
+.aboutUs__luxury {
   width: 72%;
   margin: 0 auto;
 }
-.about__luxury--img {
+.aboutUs__luxury--img {
   width: 100%;
 }
-.about__luxury--text {
+.aboutUs__luxury--text {
   text-align: center;
   padding-top: 3.375rem;
   background-color: #222222;
 }
-.about__luxury--text h3 {
+.aboutUs__luxury--text h3 {
   font-size: 1.875rem;
   font-weight: 400;
   font-family: "Old Standard TT";
@@ -248,7 +272,7 @@
   padding-bottom: 0.667em;
   color: #FFFFFF;
 }
-.about__luxury--text p {
+.aboutUs__luxury--text p {
   font-size: 0.875rem;
   font-family: "Roboto";
   padding: 0 2.5em 2.714em 2.5em;
@@ -400,7 +424,11 @@
   width: 100%;
   max-width: 383px;
   margin: 0 auto;
+  padding-bottom: 2.563rem;
   --swiper-pagination-color:#BEAD8E;
+}
+.features__swiper--slider {
+  margin-bottom: 2rem;
 }
 .features__swiper--slider--number {
   color: #222222;
@@ -431,6 +459,19 @@
   line-height: 1.714em;
   padding-bottom: 3.071em;
   width: 75%;
+}
+
+.about {
+  background-color: #222222;
+}
+.about__slider {
+  background-color: #292929;
+}
+.about__number {
+  opacity: 1;
+}
+.about__text {
+  color: #FFFFFF;
 }
 
 .menu {
@@ -547,6 +588,92 @@
   font-family: "Roboto";
   color: #999999;
   font-weight: bold;
+}
+
+.more {
+  width: 89.3%;
+  margin: 3.75rem auto;
+}
+.more__video {
+  width: 100%;
+  height: 186px;
+}
+.more__title {
+  color: #222222;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Old Standard TT";
+  padding: 0.714em;
+  font-weight: 400;
+  margin-bottom: 1.813em;
+}
+.more__icons {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  font-family: "Archivo";
+  letter-spacing: 0.2em;
+}
+.more__icons div {
+  padding: 3.667em 0 3.167em 0;
+  width: 13.167em;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1.083em;
+}
+.more__icons--breakfast, .more__icons--city, .more__icons--luxury {
+  background-color: #FFFFFF;
+  color: #222222;
+}
+.more__icons--airport {
+  background-color: #BEAD8E;
+  color: #FFFFFF;
+}
+.more__icons--breakfast, .more__icons--city {
+  margin-right: 1.667em;
+}
+.more__restaurant {
+  width: 88%;
+  margin: 0 auto;
+}
+.more__restaurant--img {
+  width: 100%;
+}
+.more__restaurant--text h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-family: "Archivo";
+  padding-top: 2.286em;
+  color: #777777;
+}
+.more__restaurant--text h1 {
+  width: 90%;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  padding: 0.65em 0;
+  color: #222222;
+}
+.more__restaurant--text p {
+  font-size: 0.875rem;
+  font-family: "Archivo";
+  color: #777777;
+  line-height: 1.714em;
+  padding-bottom: 1.857em;
+}
+.more__restaurant--text--button {
+  width: 57.6%;
+  font-size: 0.875rem;
+  font-family: "Archivo";
+  font-weight: 700;
+  letter-spacing: 0.215em;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+  padding-top: 1.571em;
+  padding-bottom: 1.643em;
+  border: none;
+  margin-bottom: 0.714em;
 }
 
 .info {

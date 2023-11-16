@@ -557,7 +557,8 @@
 }
 .swiper-container--about {
   width: 100%;
-  height: 230px;
+  height: 14.375rem;
+  padding-left: 1.25rem;
 }
 
 .swiper-slider--img {
@@ -600,7 +601,7 @@
 }
 .more__video {
   width: 100%;
-  height: 186px;
+  height: 11.625rem;
 }
 .more__title {
   color: #222222;
@@ -681,7 +682,6 @@
 }
 
 .counter {
-  background-color: aqua;
   width: 89.3%;
 }
 .counter__subtitle {

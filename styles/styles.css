@@ -555,8 +555,12 @@
   height: 335px;
   margin: 0 auto;
 }
+.swiper-container--about {
+  width: 100%;
+  height: 230px;
+}
 
-.swiper-slider img {
+.swiper-slider--img {
   width: 100%;
   height: 100%;
   padding-bottom: 1.9em;
@@ -674,6 +678,59 @@
   padding-bottom: 1.643em;
   border: none;
   margin-bottom: 0.714em;
+}
+
+.counter {
+  background-color: aqua;
+  width: 89.3%;
+}
+.counter__subtitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-family: "Archivo";
+  padding-top: 2.286em;
+  padding-left: 1.429em;
+  color: #777777;
+}
+.counter__title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  padding-top: 0.429em;
+  padding-bottom: 0.607em;
+  color: #222222;
+  padding-left: 0.357em;
+}
+.counter__items {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.25rem;
+}
+.counter__items--card {
+  margin-bottom: 3.75em;
+  display: flex;
+}
+.counter__items--card--icon {
+  transform: translateY(10%);
+}
+.counter__items--card--text h1 {
+  font-size: 3.75rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  color: #222222;
+  padding-left: 0.25em;
+}
+.counter__items--card--text p {
+  font-size: 1rem;
+  font-family: "Roboto";
+  color: #777777;
+  padding-left: 0.875em;
+}
+.counter__items--card--arrow {
+  margin-left: auto;
+  transform: translateY(100%);
+  margin-right: 1.25rem;
 }
 
 .info {

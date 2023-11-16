@@ -1,0 +1,60 @@
+.counter {
+  background-color: aqua;
+  width: 89.3%;
+
+  &__subtitle {
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-family: "Archivo";
+    padding-top: 2.286em;
+    padding-left: 1.429em;
+    color: $sixth-color;
+  }
+  &__title {
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+    padding-top: 0.429em;
+    padding-bottom: 0.607em;
+    color: $fourth-color;
+    padding-left: 0.357em;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.25rem;
+
+    &--card {
+      margin-bottom: 3.75em;
+      display: flex;
+
+      &--icon{
+        transform: translateY(10%);
+      }
+
+      &--text {
+
+        & h1 {
+          font-size: 3.75rem;
+          font-weight: 400;
+          font-family: "Old Standard TT";
+          color: $fourth-color;
+          padding-left: 0.25em;
+          
+        }
+        & p {
+          font-size: 1rem;
+          font-family: "Roboto";
+          color: $sixth-color;
+          padding-left: 0.875em;
+        }
+      }
+      &--arrow{
+        margin-left: auto;
+        transform: translateY(100%);
+        margin-right: 1.25rem;
+      }
+    }
+  }
+}

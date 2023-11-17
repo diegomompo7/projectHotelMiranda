@@ -940,6 +940,9 @@
   text-decoration: none;
   font-weight: 700;
 }
+.rooms__items--card--text--price--book:hover {
+  font-size: 1.25rem;
+}
 .rooms__page {
   width: 100%;
   display: flex;

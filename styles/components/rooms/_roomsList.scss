@@ -65,6 +65,10 @@
             color: $thirteenth-color;
             text-decoration: none;
             font-weight: 700;
+
+            &:hover{
+              font-size: 1.25rem;
+            }
           }
         }
       }

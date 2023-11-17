@@ -23,6 +23,10 @@
         width: 88%;
         font-weight: 400;
         line-height: 1.071em;
+
+        &--about{
+            padding-top: 0.286em;
+        }
     }
     &__options{
         & button {

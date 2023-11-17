@@ -9,41 +9,56 @@
     }
 
     &__title{
-       
+       white-space: break-word;
         color: $fourth-color;
         text-align: center;
         font-size: 2rem;
         font-family: 'Old Standard TT';
-        padding: 0.714em;
+        padding-top: 0.714em;
         font-weight: 400;
-        margin-bottom: 1.813em;
+        letter-spacing: -0.036em;
+        margin-bottom: 2.125em;
     }
     &__icons{
         display: flex;
         flex-wrap: wrap;
-        font-size: 0.75rem;
-        font-family: "Archivo";
-        letter-spacing: 0.2em;
 
         & div{
             padding: 3.667em 0 3.167em 0;
+            font-size: 0.75rem;
             width: 13.167em;
             margin: 0 auto;
             text-align: center;
             margin-bottom: 1.083em;
+
+            & h1 {
+                font-size: 1em;
+                font-family: "Archivo";
+                letter-spacing: 0.2em;
+                padding-top: 1em;
+            }
+
+            & img {
+                width: 54px;
+                height: 53px;
+            }
         }
 
 
-        &--breakfast, &--city, &--luxury{
+        &--container{
             background-color: $first-color;
             color: $fourth-color;
-            
-        }
-        &--airport{
+         
+        &:hover{
             background-color: $third-color;
             color: $first-color;
+            
+            & svg path {
+                fill: $first-color;
+            }
            
         }
+    }
         &--breakfast, &--city{
             margin-right: 1.667em;
             
@@ -58,6 +73,7 @@
         }
         &--text{
             & h3{
+                
                 font-size: 0.875rem;
                 font-weight: 700;
                 letter-spacing: 0.2em;
@@ -66,11 +82,13 @@
                 color: $sixth-color;
             }
             & h1 {
-                width: 90%;
+    
+                white-space: break-word;
                 font-size: 2.5rem;
                 font-weight: 400;
                 font-family: 'Old Standard TT';
                 padding: 0.65em 0;
+                letter-spacing: -0.026em;
                 color: $fourth-color;
             } 
             & p {

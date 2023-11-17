@@ -94,6 +94,9 @@
   font-weight: 400;
   line-height: 1.071em;
 }
+.header__title--about {
+  padding-top: 0.286em;
+}
 .header__options button {
   color: #FFFFFF;
   font-family: "Archivo";
@@ -334,7 +337,7 @@
   letter-spacing: 0.215em;
 }
 .aboutUs__text--title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: "Old Standard TT";
   font-weight: 400;
   padding-top: 0.571em;
@@ -348,6 +351,7 @@
   line-height: 1.714em;
   padding-right: 2.143em;
   padding-bottom: 1.714em;
+  color: #777777;
 }
 .aboutUs__text--button {
   width: 57.6%;
@@ -378,7 +382,7 @@
   font-size: 1.875rem;
   font-weight: 400;
   font-family: "Old Standard TT";
-  padding-top: 1.133em;
+  padding-top: 0.967em;
   padding-bottom: 0.667em;
 }
 .aboutUs__strong--text p {
@@ -403,7 +407,7 @@
   font-size: 1.875rem;
   font-weight: 400;
   font-family: "Old Standard TT";
-  padding-top: 1.133em;
+  padding-top: 0.967em;
   padding-bottom: 0.667em;
   color: #FFFFFF;
 }
@@ -444,7 +448,7 @@
   background-color: white;
 }
 .rooms__swiper--slider {
-  margin-bottom: 100px;
+  margin-bottom: 1.875em;
 }
 .rooms__swiper--slider--have {
   background-color: white;
@@ -475,6 +479,7 @@
   font-size: 0.875rem;
   font-family: "Roboto";
   padding: 0 2.929em;
+  line-height: 1.714em;
   color: #777777;
 }
 .rooms__swiper--slider--text--price {
@@ -482,6 +487,7 @@
   font-size: 2rem;
   color: #BEAD8E;
   padding-top: 0.375em;
+  margin-bottom: 0.594em;
   display: flex;
   justify-content: center;
 }
@@ -499,6 +505,7 @@
   font-size: 0.875rem;
   letter-spacing: 0.2em;
   padding-top: 4.571em;
+  font-family: "Archivo";
   color: #BDAC8D;
 }
 .videoIntro__text--title {
@@ -521,7 +528,7 @@
 }
 .videoIntro__video {
   width: 89.3%;
-  height: auto;
+  height: 270px;
 }
 .videoIntro__button {
   width: 57.6%;
@@ -543,6 +550,7 @@
   letter-spacing: 0.2em;
   padding-top: 4.571em;
   color: #777777;
+  font-family: "Archivo";
   text-align: center;
 }
 .features__title {
@@ -576,6 +584,10 @@
 .features__swiper--slider svg, .features__swiper--slider img {
   margin-left: 2.375rem;
   transform: translateY(-70%);
+}
+.features__swiper--slider svg:hover, .features__swiper--slider img:hover {
+  width: 100px;
+  height: 100px;
 }
 .features__swiper--slider--title {
   font-size: 1.875rem;
@@ -658,7 +670,7 @@
 .menu__items--card p {
   font-size: 0.875rem;
   font-family: "Roboto";
-  color: #777777;
+  color: #222222;
   line-height: 1.714em;
   padding-left: 2.143em;
   width: 90%;
@@ -721,35 +733,48 @@
   height: 11.625rem;
 }
 .more__title {
+  white-space: break-word;
   color: #222222;
   text-align: center;
   font-size: 2rem;
   font-family: "Old Standard TT";
-  padding: 0.714em;
+  padding-top: 0.714em;
   font-weight: 400;
-  margin-bottom: 1.813em;
+  letter-spacing: -0.036em;
+  margin-bottom: 2.125em;
 }
 .more__icons {
   display: flex;
   flex-wrap: wrap;
-  font-size: 0.75rem;
-  font-family: "Archivo";
-  letter-spacing: 0.2em;
 }
 .more__icons div {
   padding: 3.667em 0 3.167em 0;
+  font-size: 0.75rem;
   width: 13.167em;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 1.083em;
 }
-.more__icons--breakfast, .more__icons--city, .more__icons--luxury {
+.more__icons div h1 {
+  font-size: 1em;
+  font-family: "Archivo";
+  letter-spacing: 0.2em;
+  padding-top: 1em;
+}
+.more__icons div img {
+  width: 54px;
+  height: 53px;
+}
+.more__icons--container {
   background-color: #FFFFFF;
   color: #222222;
 }
-.more__icons--airport {
+.more__icons--container:hover {
   background-color: #BEAD8E;
   color: #FFFFFF;
+}
+.more__icons--container:hover svg path {
+  fill: #FFFFFF;
 }
 .more__icons--breakfast, .more__icons--city {
   margin-right: 1.667em;
@@ -770,11 +795,12 @@
   color: #777777;
 }
 .more__restaurant--text h1 {
-  width: 90%;
+  white-space: break-word;
   font-size: 2.5rem;
   font-weight: 400;
   font-family: "Old Standard TT";
   padding: 0.65em 0;
+  letter-spacing: -0.026em;
   color: #222222;
 }
 .more__restaurant--text p {
@@ -847,7 +873,6 @@
 .counter__items--card--arrow {
   margin-left: auto;
   transform: translateY(100%);
-  margin-right: 1.25rem;
 }
 
 .rooms {

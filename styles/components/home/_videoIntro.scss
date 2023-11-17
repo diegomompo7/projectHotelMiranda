@@ -7,6 +7,7 @@
             font-size: 0.875rem;
             letter-spacing: 0.2em;
             padding-top: 4.571em;
+            font-family: "Archivo";
             color: $seventh-color;
         }
         &--title{
@@ -30,7 +31,7 @@
     }
     &__video{
         width: 89.3%;
-        height: auto;
+        height: 270px;
     }
     &__button{
         width: 57.6%;

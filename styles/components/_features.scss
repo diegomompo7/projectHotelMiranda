@@ -4,6 +4,7 @@
         letter-spacing: 0.2em;
         padding-top: 4.571em;
         color: $sixth-color;
+        font-family: "Archivo";
         text-align: center;
     }
     &__title{
@@ -41,6 +42,11 @@
             & svg , & img{
                 margin-left: 2.375rem;
                 transform: translateY(-70%);
+                
+                &:hover{
+                    width: 100px;
+                    height: 100px;
+                }
             }
 
             &--title{

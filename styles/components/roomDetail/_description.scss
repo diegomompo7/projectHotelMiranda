@@ -42,3 +42,15 @@
     width: 89.3%;
     padding-left: 1.25em;
 }
+
+.secondDescription {
+  &__text{
+    white-space: break-word;
+    font-size: 0.875rem;
+    font-family: "Roboto";
+    margin-top: 1.714em;
+    padding: 0 20px;
+    line-height: 1.714em;
+    color: $sixth-color;
+  }
+}

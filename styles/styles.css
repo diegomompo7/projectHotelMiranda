@@ -1012,6 +1012,7 @@
   padding: 0 20px;
   line-height: 1.714em;
   color: #777777;
+  margin-bottom: 4.286em;
 }
 
 .reserve__title {
@@ -1056,6 +1057,38 @@
   background-color: #BEAD8E;
   color: #ffffff;
   border: none;
+}
+
+.amenities {
+  background-color: aqua;
+  width: 89.3%;
+  margin: 0 auto;
+}
+.amenities__title {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  padding-bottom: 0.433em;
+  color: #222222;
+}
+.amenities__line {
+  border: 1px solid #F1F1F1;
+  margin-bottom: 1.688em;
+}
+.amenities__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(169px, 1fr));
+  grid-template-rows: repeat(6fr, 2fr);
+}
+.amenities__items--have {
+  display: flex;
+  width: 50.4%;
+  margin-right: 9px;
+  margin-bottom: 16px;
+}
+.amenities__items--have p {
+  font-size: 0.938em;
+  color: #777777;
 }
 
 html,

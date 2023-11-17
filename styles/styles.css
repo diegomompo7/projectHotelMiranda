@@ -1076,13 +1076,12 @@
   margin-bottom: 1.688em;
 }
 .amenities__items {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(169px, 1fr));
-  grid-template-rows: repeat(6fr, 2fr);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .amenities__items--have {
   display: flex;
-  width: 50.4%;
   margin-right: 9px;
   margin-bottom: 16px;
 }

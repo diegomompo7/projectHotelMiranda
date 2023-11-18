@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 .nav {
   display: flex;
@@ -1009,7 +1009,7 @@
   font-size: 0.875rem;
   font-family: "Roboto";
   margin-top: 1.714em;
-  padding: 0 20px;
+  padding: 0 1.429em;
   line-height: 1.714em;
   color: #777777;
   margin-bottom: 4.286em;
@@ -1060,9 +1060,10 @@
 }
 
 .amenities {
-  background-color: aqua;
   width: 89.3%;
+  height: auto;
   margin: 0 auto;
+  margin-bottom: 1.5rem;
 }
 .amenities__title {
   font-size: 1.875rem;
@@ -1079,15 +1080,66 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  height: 260px;
 }
 .amenities__items--have {
   display: flex;
-  margin-right: 9px;
-  margin-bottom: 16px;
+  margin-right: 0.583rem;
+  margin-bottom: 1rem;
 }
 .amenities__items--have p {
   font-size: 0.938em;
   color: #777777;
+  font-family: "Roboto";
+  font-weight: 500;
+  padding-left: 0.533em;
+}
+
+.userInfo {
+  width: 89.3%;
+  max-width: 370px;
+  margin: 0 auto;
+  text-align: center;
+}
+.userInfo__img {
+  margin-top: 1.25rem;
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 50%;
+}
+.userInfo__circle {
+  background-color: #BDAC8D;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: solid 4px #FFFFFF;
+  padding-top: 0.688rem;
+  margin: 0 auto;
+  transform: translate(3.438rem, 3.75rem);
+}
+.userInfo__title {
+  margin: 0;
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  padding-top: 1.267em;
+  padding-bottom: 0.5em;
+  color: #222222;
+}
+.userInfo__subtitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-family: "Archivo";
+  color: #BDAC8D;
+  padding-bottom: 1.786em;
+}
+.userInfo__description {
+  font-size: 1rem;
+  font-family: "Archivo";
+  line-height: 1.5em;
+  color: #777777;
+  padding-bottom: 2.563em;
 }
 
 html,

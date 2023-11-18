@@ -1,7 +1,8 @@
 .amenities{
-    background-color: aqua;
     width: 89.3%;
+    height: auto;
     margin: 0 auto;
+    margin-bottom: 1.5rem;
 
     &__title {
         font-size: 1.875rem;
@@ -19,18 +20,21 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-    
+        height: 260px;
     
         &--have{
             
             display: flex;
-           
-            margin-right: 9px;
-            margin-bottom: 16px;
+
+            margin-right: 0.583rem;
+            margin-bottom: 1rem;
 
             & p {
                 font-size: 0.938em;
                 color: $sixth-color;
+                font-family: "Roboto";
+                font-weight: 500;
+                padding-left: 0.533em;
             }
         }
     }

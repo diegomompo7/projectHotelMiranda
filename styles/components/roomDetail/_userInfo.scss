@@ -1,0 +1,48 @@
+.userInfo{
+    width: 89.3%;
+    max-width: 370px;
+    margin: 0 auto;
+    text-align: center;
+
+    &__img{
+        margin-top: 1.25rem;
+        width: 9.375rem;
+        height:  9.375rem;
+        border-radius: 50%;
+    }
+
+    &__circle{
+        background-color: $seventh-color;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        border: solid 4px $first-color;
+        padding-top: 0.688rem;
+        margin: 0 auto;
+        transform: translate(3.438rem, 3.75rem)
+    }
+    &__title {
+        margin: 0;
+        font-size: 1.875rem;
+        font-weight: 400;
+        font-family: "Old Standard TT";
+        padding-top: 1.267em;
+        padding-bottom: 0.5em;
+        color: $fourth-color;
+    }
+    &__subtitle {
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        font-family: "Archivo";
+        color: $seventh-color;
+        padding-bottom: 1.786em;
+    }
+    &__description{
+        font-size: 1rem;
+        font-family: "Archivo";
+        line-height: 1.5em;
+        color: $sixth-color;
+        padding-bottom: 2.563em;
+      }
+}

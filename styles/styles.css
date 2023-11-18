@@ -440,12 +440,14 @@
   width: 375px;
   height: 100%;
   margin: 0 auto;
-  --swiper-navigation-color: #111111;
-  --swiper-navigation-size: 1.5rem;
-  --swiper-navigation-top-offset: 35%;
 }
-.rooms__swiper .swiper-button-next {
-  background-color: white;
+.rooms__swiper--button {
+  color: #111111;
+  background-color: #FFFFFF;
+}
+.rooms__swiper--button:hover {
+  color: #FFFFFF;
+  background-color: #BDAC8D;
 }
 .rooms__swiper--slider {
   margin-bottom: 1.875em;

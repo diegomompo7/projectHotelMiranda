@@ -22,13 +22,15 @@
     height: 100%;
     margin: 0 auto;
 
-    --swiper-navigation-color: #111111;
-    --swiper-navigation-size: 1.5rem;
-    --swiper-navigation-top-offset: 35%;
+    &--button{
+        color: $second-color;
+        background-color: $first-color;
 
-    .swiper-button-next{
-        background-color: white;
+        &:hover{
+          color: $first-color;
+          background-color: $seventh-color;
         }
+    }
     
     &--slider {
       

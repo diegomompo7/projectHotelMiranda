@@ -1266,6 +1266,91 @@
   font-size: 1.25rem;
 }
 
+.offers {
+  margin-top: 3.75rem;
+}
+.offers__items {
+  margin: 0 auto;
+}
+.offers__items--card {
+  width: 89.3%;
+  margin: 0 auto;
+  padding-bottom: 1.625em;
+}
+.offers__items--card img {
+  width: 100%;
+}
+.offers__items--card--info--principal {
+  display: flex;
+}
+.offers__items--card--info--principal--text {
+  width: 94%;
+}
+.offers__items--card--info--principal--text h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-family: "Archivo";
+  padding-top: 1.143em;
+  padding-left: 1.429em;
+  color: #777777;
+}
+.offers__items--card--info--principal--text h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  padding-top: 0.3em;
+  color: #222222;
+  padding-left: 0.5em;
+}
+.offers__items--card--info--principal--price {
+  font-family: "Archivo";
+  padding-top: 1rem;
+  width: 6%;
+  transform: translate(-6.875rem, -6.875rem);
+}
+.offers__items--card--info--principal--price--original {
+  font-size: 1.438rem;
+  color: #BEAD8E;
+  display: flex;
+  text-decoration: line-through;
+  margin-left: 0.87em;
+  margin-bottom: 0.957em;
+}
+.offers__items--card--info--principal--price--original p {
+  font-size: 0.688rem;
+  align-self: flex-end;
+  margin-bottom: 0.462em;
+}
+.offers__items--card--info--principal--price--offer {
+  font-size: 1.875rem;
+  color: #DE5777;
+  display: flex;
+}
+.offers__items--card--info--principal--price--offer p {
+  font-size: 0.75rem;
+  align-self: flex-end;
+  margin-bottom: 0.417em;
+}
+.offers__items--card--info--description--text--desc {
+  white-space: break-word;
+  font-size: 0.875rem;
+  font-family: "Roboto";
+  margin-top: 1.714em;
+  margin-bottom: 1.714em;
+  padding-left: 1.429em;
+  line-height: 1.714em;
+  color: #777777;
+}
+.offers__items--card--info--description--text--have {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 0.583rem;
+  margin-bottom: 1rem;
+  padding-left: 1.429em;
+}
+
 html,
 * {
   box-sizing: border-box;

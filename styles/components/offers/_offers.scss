@@ -1,0 +1,100 @@
+.offers{
+  margin-top: 3.75rem;
+ 
+
+  &__items {
+    margin: 0 auto;
+
+    &--card {
+      width: 89.3%;
+      margin: 0 auto;
+      padding-bottom: 1.625em;
+
+
+      & img {
+        width: 100%;
+      }
+      &--info{
+
+        &--principal {
+          display: flex;
+
+          &--text{
+            width: 94%;
+            & h3 {
+              font-size: 0.875rem;
+              font-weight: 700;
+              letter-spacing: 0.2em;
+              font-family: "Archivo";
+              padding-top: 1.143em;
+              padding-left: 1.429em;
+              color: $sixth-color;
+            }
+            & h1 {
+              font-size: 2.5rem;
+              font-weight: 400;
+              font-family: "Old Standard TT";
+              padding-top: 0.3em;
+              color: $fourth-color;
+              padding-left: 0.5em;
+            }
+
+          }
+          &--price {
+            font-family: "Archivo";
+            padding-top: 1rem;
+            width: 6%;
+            transform: translate(-6.875rem, -6.875rem);
+  
+            &--original {
+              font-size: 1.438rem;
+              color: $third-color;
+              display: flex;
+              text-decoration: line-through;
+              margin-left: 0.87em;
+              margin-bottom: 0.957em;
+              & p {
+                font-size: 0.688rem;
+                align-self: flex-end;
+                margin-bottom: 0.462em;
+              }
+            }
+            &--offer {
+              font-size: 1.875rem;
+              color: $fifteenth-color;
+              display: flex;
+              & p {
+                font-size: 0.75rem;
+                align-self: flex-end;
+                margin-bottom: 0.417em;
+              }
+            }
+          }
+        }
+        &--description{
+          &--text{
+            &--desc {
+              white-space: break-word;
+              font-size: 0.875rem;
+              font-family: "Roboto";
+              margin-top: 1.714em;
+              margin-bottom: 1.714em;
+              padding-left:  1.429em;
+              line-height: 1.714em;
+              color: $sixth-color;
+              
+            }
+            &--have{
+              width: 95%;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              margin-right: 0.583rem;
+              margin-bottom: 1rem;
+              padding-left:  1.429em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

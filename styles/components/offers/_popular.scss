@@ -1,25 +1,30 @@
-.related{
-    width: 89.3%;
-    margin: 0 auto;
+.popular{
+    background-color: $fourth-color;
+    text-align: center;
 
-    &__title {
-        font-size: 1.875rem;
+    &__subtitle {
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.2em;
+        font-family: "Archivo";
+        padding-top: 3.429em;
+        color: $seventh-color;
+      }
+      &__title{
+        font-size: 2.5rem;
         font-weight: 400;
         font-family: "Old Standard TT";
-        padding-bottom: 0.433em;
-        color: $fourth-color;
-    }
-    &__line{
-        border: 1px solid $fourteenth-color;
-        margin-bottom: 2.313rem;
-        
-    }
-    &__swiper {
+        padding-top: 0.625em;
+        padding-bottom: 1.2em;
+        color: $first-color;
+      }
+      &__swiper {
         text-align: center;
+        width: 89.3%;
         max-width: 370px;
       
 
-        --swiper-navigation-top-offset: 22.6%;
+        --swiper-navigation-top-offset: 30.6%;
        
     
         .swiper-button-next, .swiper-button-prev{
@@ -27,6 +32,7 @@
           background-color: $first-color;
           width: 2rem;
           height: 2rem;
+
           font-size: 0.563em;
     
           &:hover{
@@ -40,7 +46,9 @@
         }
         
         &--slider {
-        
+            background-color: $first-color;
+            margin-bottom: 3rem;
+    
     
            &--have{
             text-align: center;
@@ -48,7 +56,7 @@
             display: inline-block;
             padding: 0.75rem 0;
             padding-left: 1rem;
-            transform: translateY(-20px);
+            transform: translateY(-1.25em);
         
     
             & svg {
@@ -106,6 +114,4 @@
           }
         }
       }
-
-
 }

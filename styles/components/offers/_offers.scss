@@ -35,8 +35,12 @@
               font-weight: 400;
               font-family: "Old Standard TT";
               padding-top: 0.3em;
-              color: $fourth-color;
               padding-left: 0.5em;
+
+              & a{
+                text-decoration: none;
+                color: $fourth-color;
+              }
             }
 
           }
@@ -85,7 +89,7 @@
               
             }
             &--have{
-              width: 95%;
+              width: 100%;
               display: grid;
               grid-template-columns: 1fr 1fr;
               margin-right: 0.583rem;
@@ -93,6 +97,19 @@
               padding-left:  1.429em;
             }
           }
+          &--button{
+            width: 64.4%;
+            font-size: 0.875rem;
+            font-family: "Archivo";
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            color: $first-color;
+            background-color: $third-color;
+            padding-top: 1.571em;
+            padding-bottom: 1.643em;
+            border: none;
+            margin-bottom: 0.714em;
+        }
         }
       }
     }

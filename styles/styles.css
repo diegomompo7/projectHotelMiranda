@@ -441,13 +441,20 @@
   height: 100%;
   margin: 0 auto;
 }
-.rooms__swiper--button {
+.rooms__swiper .swiper-button-next, .rooms__swiper .swiper-button-prev {
   color: #111111;
   background-color: #FFFFFF;
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.563em;
+  transform: translateY(-10.333em);
 }
-.rooms__swiper--button:hover {
-  color: #FFFFFF;
+.rooms__swiper .swiper-button-next:hover, .rooms__swiper .swiper-button-prev:hover {
   background-color: #BDAC8D;
+  color: #FFFFFF;
+}
+.rooms__swiper .swiper-button-next:after, .rooms__swiper .swiper-button-prev:after {
+  font-size: 0.563rem;
 }
 .rooms__swiper--slider {
   margin-bottom: 1.875em;
@@ -475,7 +482,7 @@
   font-weight: 400;
   font-family: "Old Standard TT";
   padding-top: 0.679em;
-  padding-bottom: 0.429em;
+  padding-bottom: 1.107em;
 }
 .rooms__swiper--slider--text--description {
   font-size: 0.875rem;
@@ -912,23 +919,24 @@
   font-size: 1.5rem;
   font-weight: 400;
   font-family: "Old Standard TT";
-  padding-bottom: 0.429em;
+  padding-bottom: 0.667em;
 }
 .rooms__items--card--text--description {
   font-size: 0.875rem;
   font-family: "Roboto";
+  line-height: 1.714em;
   color: #777777;
 }
 .rooms__items--card--text--price {
   font-family: "Archivo";
-  padding-top: 1.25em;
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
 }
 .rooms__items--card--text--price--cost {
   font-size: 1rem;
   color: #BEAD8E;
-  margin-right: 24px;
+  margin-right: 1.5em;
   display: flex;
 }
 .rooms__items--card--text--price--cost p {
@@ -1137,11 +1145,125 @@
   padding-bottom: 1.786em;
 }
 .userInfo__description {
-  font-size: 1rem;
+  text-align: center;
   font-family: "Archivo";
   line-height: 1.5em;
   color: #777777;
   padding-bottom: 2.563em;
+}
+
+.cancel {
+  width: 89.3%;
+  margin: 0 auto;
+}
+.cancel__title {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  padding-bottom: 0.433em;
+  color: #222222;
+}
+.cancel__line {
+  border: 1px solid #F1F1F1;
+}
+.cancel__text {
+  white-space: break-word;
+  font-size: 1rem;
+  font-family: "Roboto";
+  margin-top: 2.125em;
+  line-height: 1.5em;
+  color: #777777;
+  margin-bottom: 4.286em;
+}
+
+.related {
+  width: 89.3%;
+  margin: 0 auto;
+}
+.related__title {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  padding-bottom: 0.433em;
+  color: #222222;
+}
+.related__line {
+  border: 1px solid #F1F1F1;
+}
+.related__swiper {
+  text-align: center;
+  max-width: 370px;
+  --swiper-navigation-top-offset: 22.6%;
+}
+.related__swiper .swiper-button-next, .related__swiper .swiper-button-prev {
+  color: #111111;
+  background-color: #FFFFFF;
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.563em;
+}
+.related__swiper .swiper-button-next:hover, .related__swiper .swiper-button-prev:hover {
+  background-color: #BDAC8D;
+  color: #FFFFFF;
+}
+.related__swiper .swiper-button-next:after, .related__swiper .swiper-button-prev:after {
+  font-size: 0.563rem;
+}
+.related__swiper--slider--have {
+  text-align: center;
+  background-color: white;
+  display: inline-block;
+  padding: 0.75rem 0;
+  padding-left: 1rem;
+  transform: translateY(-20px);
+}
+.related__swiper--slider--have svg {
+  margin-right: 1rem;
+}
+.related__swiper--slider img {
+  width: 100%;
+}
+.related__swiper--slider--text {
+  margin: 0 auto;
+}
+.related__swiper--slider--text--title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Old Standard TT";
+  margin-top: 0.167em;
+  padding-bottom: 0.667em;
+}
+.related__swiper--slider--text--description {
+  font-size: 0.875rem;
+  font-family: "Roboto";
+  line-height: 1.714em;
+  color: #777777;
+}
+.related__swiper--slider--text--price {
+  font-family: "Archivo";
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.related__swiper--slider--text--price--cost {
+  font-size: 1rem;
+  color: #BEAD8E;
+  margin-right: 24px;
+  display: flex;
+}
+.related__swiper--slider--text--price--cost p {
+  align-self: flex-end;
+  margin-bottom: 0.462em;
+  padding-bottom: 1.063em;
+}
+.related__swiper--slider--text--price--book {
+  font-size: 1rem;
+  color: #BDBDBD;
+  text-decoration: none;
+  font-weight: 700;
+}
+.related__swiper--slider--text--price--book:hover {
+  font-size: 1.25rem;
 }
 
 html,

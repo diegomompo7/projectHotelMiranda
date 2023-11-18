@@ -22,14 +22,22 @@
     height: 100%;
     margin: 0 auto;
 
-    &--button{
-        color: $second-color;
-        background-color: $first-color;
+    .swiper-button-next, .swiper-button-prev{
+      color: $second-color;
+      background-color: $first-color;
+      width: 2rem;
+      height: 2rem;
+      font-size: 0.563em;
+     transform: translateY(-10.333em);
 
-        &:hover{
-          color: $first-color;
-          background-color: $seventh-color;
-        }
+      &:hover{
+        background-color: $seventh-color;
+        color: $first-color;
+      }
+
+      &:after {
+        font-size: 0.563rem;
+      }
     }
     
     &--slider {
@@ -62,7 +70,7 @@
           font-weight: 400;
           font-family: "Old Standard TT";
           padding-top: 0.679em;
-          padding-bottom: 0.429em;
+          padding-bottom: 1.107em;
         }
         &--description {
           font-size: 0.875rem;

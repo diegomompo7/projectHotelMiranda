@@ -35,24 +35,24 @@
           font-size: 1.5rem;
           font-weight: 400;
           font-family: "Old Standard TT";
-
-          padding-bottom: 0.429em;
+          padding-bottom: 0.667em;
         }
         &--description {
           font-size: 0.875rem;
           font-family: "Roboto";
+          line-height: 1.714em;
           color: $sixth-color;
         }
         &--price {
           font-family: "Archivo";
-          padding-top: 1.25em;
+          padding-top: 1rem;
           display: flex;
           justify-content: center;
 
           &--cost {
             font-size: 1rem;
             color: $third-color;
-            margin-right: 24px;
+            margin-right: 1.5em;
             display: flex;
             & p {
               align-self: flex-end;

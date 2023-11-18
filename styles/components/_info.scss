@@ -49,10 +49,21 @@
       }
       &--rest {
         background-color: $ninth-color;
-      }
-      &--x {
+
+        path{
+          fill: $sixth-color;
+        }
+
+        &:hover{
         background-color: $third-color;
+        }
+
+        &:hover path{
+          fill: $first-color;
+        }
+ 
       }
+ 
     }
   }
   &__services {

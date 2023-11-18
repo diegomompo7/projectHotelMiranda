@@ -209,8 +209,14 @@
 .info__hotel--social--rest {
   background-color: #F8F8F8;
 }
-.info__hotel--social--x {
+.info__hotel--social--rest path {
+  fill: #777777;
+}
+.info__hotel--social--rest:hover {
   background-color: #BEAD8E;
+}
+.info__hotel--social--rest:hover path {
+  fill: #FFFFFF;
 }
 .info__services {
   margin-top: 2rem;
@@ -1467,6 +1473,78 @@
 }
 .popular__swiper--slider--text--price--book:hover {
   font-size: 1.25rem;
+}
+
+.infoContact {
+  margin-top: 6px;
+}
+.infoContact__items {
+  width: 94%;
+  max-width: 406px;
+  height: 236px;
+  margin: 0 auto;
+}
+.infoContact__items--number {
+  width: 1em;
+  transform: translateY(-55%);
+  margin-left: auto;
+  font-size: 12.5rem;
+  font-family: "Roboto";
+  color: #F8F8F8;
+  z-index: -1;
+}
+.infoContact__items--card {
+  width: 100%;
+  display: flex;
+  padding-top: 3.313rem;
+  padding-left: 2rem;
+  z-index: 2;
+}
+.infoContact__items--card--text {
+  width: 100%;
+  z-index: 1;
+}
+.infoContact__items--card--text h1 {
+  font-size: 1.25em;
+  padding-left: 1.35em;
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  padding-bottom: 1.6em;
+}
+.infoContact__items--card--text p {
+  font-size: 0.875em;
+  padding-left: 1.929em;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.formContact {
+  width: 89%;
+  margin: 0 auto;
+  text-align: center;
+}
+.formContact input, .formContact textarea {
+  width: 100%;
+  padding: 1.583em 0 1.375em 3.25em;
+  margin-bottom: 1rem;
+  background-color: #F8F8F8;
+  border: none;
+  font-size: 1rem;
+  font-family: "Roboto";
+}
+.formContact__button {
+  width: 64.4%;
+  font-size: 0.875rem;
+  font-family: "Archivo";
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+  margin-top: 1.429em;
+  padding-top: 1.571em;
+  padding-bottom: 1.643em;
+  border: none;
+  margin-bottom: 0.714em;
 }
 
 html,

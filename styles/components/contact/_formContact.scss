@@ -1,0 +1,30 @@
+.formContact{
+    width: 89%;
+    margin: 0 auto;
+    text-align: center;
+
+    & input, & textarea{
+        width: 100%;
+        padding: 1.583em  0 1.375em 3.25em;
+        margin-bottom: 1rem;
+        background-color: $ninth-color;
+        border: none;
+        font-size: 1rem;
+        font-family: "Roboto";
+    }
+
+    &__button{
+        width: 64.4%;
+        font-size: 0.875rem;
+        font-family: "Archivo";
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: $first-color;
+        background-color: $third-color;
+        margin-top: 1.429em;
+        padding-top: 1.571em;
+        padding-bottom: 1.643em;
+        border: none;
+        margin-bottom: 0.714em;
+    }
+}

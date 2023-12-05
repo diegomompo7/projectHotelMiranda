@@ -2,22 +2,45 @@
     display: flex;
     height: 4.375rem;
     box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.29);
+    background-color: $first-color;
+
+    @include desktop(){
+        width: 74%;
+    }
 
 
     &__icon{
         margin: 0 2rem 0 1.25rem;
         align-self: center;
+
+        @include desktop(){
+            display: none;
+        }
+
+
     }
     &__container{
         display: flex;
         align-self: center;
         width: 110px;
+        background-color: $first-color;
+
+        @include desktop(){
+            width: 265px;
+            padding-right: 28px;
+        }
 
 
         &--logo{
         
             width: 32%;
             margin-right: 0.875rem;
+            background-color: $first-color;
+
+            @include desktop(){
+                width: 75%;
+                padding-right: 28px;
+            }
 
             & img {
                 transform: translateX(100%) translateY(80%);
@@ -25,6 +48,7 @@
         }
         &--name{
             padding: 0.5rem 0 0.5rem 0;
+            background-color: $first-color;
         }
 
     }
@@ -34,12 +58,53 @@
         align-self: center;
         text-align: right;
         margin-right: 1.25rem;
+        background-color: $first-color;
 
         &--search{
             margin-left: 1.5rem;
+            background-color: $first-color;
+        }
+        &--user{
+            background-color: $first-color;
         }
     }
+    
+        &__menu{
+            display: none;
+            background-color: $first-color;
+            width: 100%;
+            flex-direction: column;
+            padding-top: 2rem;
+
+            @include desktop(){
+                display: block
+            }
+
+            & ul {
+                @include desktop(){
+                    display: flex;
+                    flex-direction: row;
+                    
+                }
+            }
+
+        
+            & li{
+                list-style: none;
+                padding-left: 1.25em;
+                padding-bottom: 1.5em;
+             }
+        
+            & a {
+             text-decoration: none;
+             color: $second-color;
+             font-size: 1rem;
+             font-family: "Archivo";
+             font-weight: 600;
+            }
+        }
 }
+
 
 .menu--mobile{
     display: none;
@@ -62,3 +127,4 @@
      font-weight: 600;
     }
 }
+

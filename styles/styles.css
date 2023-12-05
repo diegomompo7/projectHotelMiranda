@@ -6,34 +6,95 @@
   display: flex;
   height: 4.375rem;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 62.5rem) {
+  .nav {
+    width: 74%;
+  }
 }
 .nav__icon {
   margin: 0 2rem 0 1.25rem;
   align-self: center;
 }
+@media screen and (min-width: 62.5rem) {
+  .nav__icon {
+    display: none;
+  }
+}
 .nav__container {
   display: flex;
   align-self: center;
   width: 110px;
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 62.5rem) {
+  .nav__container {
+    width: 265px;
+    padding-right: 28px;
+  }
 }
 .nav__container--logo {
   width: 32%;
   margin-right: 0.875rem;
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 62.5rem) {
+  .nav__container--logo {
+    width: 75%;
+    padding-right: 28px;
+  }
 }
 .nav__container--logo img {
   transform: translateX(100%) translateY(80%);
 }
 .nav__container--name {
   padding: 0.5rem 0 0.5rem 0;
+  background-color: #FFFFFF;
 }
 .nav__options {
   flex: 1;
   align-self: center;
   text-align: right;
   margin-right: 1.25rem;
+  background-color: #FFFFFF;
 }
 .nav__options--search {
   margin-left: 1.5rem;
+  background-color: #FFFFFF;
+}
+.nav__options--user {
+  background-color: #FFFFFF;
+}
+.nav__menu {
+  display: none;
+  background-color: #FFFFFF;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+@media screen and (min-width: 62.5rem) {
+  .nav__menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .nav__menu ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.nav__menu li {
+  list-style: none;
+  padding-left: 1.25em;
+  padding-bottom: 1.5em;
+}
+.nav__menu a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 1rem;
+  font-family: "Archivo";
+  font-weight: 600;
 }
 
 .menu--mobile {

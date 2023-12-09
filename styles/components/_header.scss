@@ -5,6 +5,10 @@
     position: relative;
     color: $first-color;
 
+    @include desktop(){
+        z-index: -1;
+    }
+
 
     &__subtitle{
         font-size: 0.813rem;

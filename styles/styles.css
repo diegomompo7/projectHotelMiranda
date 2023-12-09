@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+.desktop-nav {
+  background-color: #222222;
+}
+
 .nav {
   display: flex;
   height: 4.375rem;
@@ -10,7 +14,12 @@
 }
 @media screen and (min-width: 62.5rem) {
   .nav {
-    width: 74%;
+    max-width: 1420px;
+    height: 7.5em;
+    margin: 0 auto;
+    transform: translateY(50%);
+    align-items: center;
+    z-index: 5;
   }
 }
 .nav__icon {
@@ -25,32 +34,44 @@
 .nav__container {
   display: flex;
   align-self: center;
-  width: 110px;
+  width: 6.875em;
   background-color: #FFFFFF;
 }
 @media screen and (min-width: 62.5rem) {
   .nav__container {
-    width: 265px;
-    padding-right: 28px;
+    width: 17.2%;
+    margin-right: 7.812em;
   }
 }
 .nav__container--logo {
   width: 32%;
   margin-right: 0.875rem;
-  background-color: #FFFFFF;
 }
 @media screen and (min-width: 62.5rem) {
   .nav__container--logo {
-    width: 75%;
-    padding-right: 28px;
+    margin-left: 1.25rem;
+    width: 5em;
+    padding-right: 1.75em;
   }
 }
 .nav__container--logo img {
   transform: translateX(100%) translateY(80%);
 }
+@media screen and (min-width: 62.5rem) {
+  .nav__container--logo img {
+    width: 100%;
+    transform: translateX(15%) translateY(50%);
+  }
+}
 .nav__container--name {
   padding: 0.5rem 0 0.5rem 0;
   background-color: #FFFFFF;
+}
+@media screen and (min-width: 62.5rem) {
+  .nav__container--name {
+    width: 8.562em;
+    height: 3.5em;
+  }
 }
 .nav__options {
   flex: 1;
@@ -59,12 +80,34 @@
   margin-right: 1.25rem;
   background-color: #FFFFFF;
 }
+@media screen and (min-width: 62.5rem) {
+  .nav__options {
+    width: 80%;
+  }
+}
 .nav__options--search {
   margin-left: 1.5rem;
   background-color: #FFFFFF;
 }
+@media screen and (min-width: 62.5rem) {
+  .nav__options--search {
+    border: 2px solid #858585;
+    width: 3.75em;
+    height: 3.75em;
+    padding: 1.125em;
+  }
+}
 .nav__options--user {
   background-color: #FFFFFF;
+}
+@media screen and (min-width: 62.5rem) {
+  .nav__options--user {
+    border: 2px solid #858585;
+    box-sizing: border-box;
+    width: 3.75em;
+    height: 3.75em;
+    padding: 1.125em;
+  }
 }
 .nav__menu {
   display: none;
@@ -76,6 +119,7 @@
 @media screen and (min-width: 62.5rem) {
   .nav__menu {
     display: block;
+    width: 50%;
   }
 }
 @media screen and (min-width: 62.5rem) {
@@ -86,7 +130,7 @@
 }
 .nav__menu li {
   list-style: none;
-  padding-left: 1.25em;
+  padding-left: 3.75rem;
   padding-bottom: 1.5em;
 }
 .nav__menu a {
@@ -136,6 +180,11 @@
   background-size: 100% 100%;
   position: relative;
   color: #FFFFFF;
+}
+@media screen and (min-width: 62.5rem) {
+  .header {
+    z-index: -1;
+  }
 }
 .header__subtitle {
   font-size: 0.813rem;

@@ -1,3 +1,7 @@
+.desktop-nav{
+    background-color: $fourth-color;
+}
+
 .nav{
     display: flex;
     height: 4.375rem;
@@ -5,7 +9,12 @@
     background-color: $first-color;
 
     @include desktop(){
-        width: 74%;
+        max-width: 1420px;
+        height: 7.5em;
+        margin: 0 auto;
+        transform: translateY(50%);
+        align-items: center;
+        z-index: 5;
     }
 
 
@@ -22,12 +31,13 @@
     &__container{
         display: flex;
         align-self: center;
-        width: 110px;
+        width: 6.875em;
         background-color: $first-color;
 
         @include desktop(){
-            width: 265px;
-            padding-right: 28px;
+            width: 17.2%;
+            margin-right: 7.812em;
+
         }
 
 
@@ -35,20 +45,32 @@
         
             width: 32%;
             margin-right: 0.875rem;
-            background-color: $first-color;
+
 
             @include desktop(){
-                width: 75%;
-                padding-right: 28px;
+                margin-left: 1.25rem;
+                width: 5em;
+                padding-right: 1.75em;
+
             }
 
             & img {
                 transform: translateX(100%) translateY(80%);
+
+                @include desktop(){
+                    width: 100%;
+                    transform: translateX(15%) translateY(50%);
+                }
+    
             }
         }
         &--name{
             padding: 0.5rem 0 0.5rem 0;
             background-color: $first-color;
+            @include desktop(){
+                width: 8.562em;
+                height: 3.5em;
+            }
         }
 
     }
@@ -59,13 +81,34 @@
         text-align: right;
         margin-right: 1.25rem;
         background-color: $first-color;
+        
+        @include desktop(){
+            width: 80%;
+           
+        }
+
 
         &--search{
             margin-left: 1.5rem;
             background-color: $first-color;
+
+            @include desktop(){
+            border: 2px solid $sixtheenth-color;
+            width: 3.75em;
+            height: 3.75em;
+            padding: 1.125em;
+            }
+            
         }
         &--user{
             background-color: $first-color;
+            @include desktop(){
+                border: 2px solid $sixtheenth-color;
+                box-sizing: border-box;
+                width: 3.75em;
+                height: 3.75em;
+                padding: 1.125em;
+            }
         }
     }
     
@@ -77,7 +120,8 @@
             padding-top: 2rem;
 
             @include desktop(){
-                display: block
+                display: block;
+                width : 50%;
             }
 
             & ul {
@@ -91,7 +135,7 @@
         
             & li{
                 list-style: none;
-                padding-left: 1.25em;
+                padding-left: 3.75rem;
                 padding-bottom: 1.5em;
              }
         

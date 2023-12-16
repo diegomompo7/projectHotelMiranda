@@ -18,6 +18,12 @@
         letter-spacing: 0.215em;
         line-height: 1.385em;
         width: 63%;
+
+        @include desktop(){
+           font-size: 0.875rem;
+           margin-left: 26.78em;
+           padding-top: 6.57em;
+        }
     }
     &__title{
         font-size: 3.5rem;
@@ -30,7 +36,15 @@
 
         &--about{
             padding-top: 0.286em;
+
         }
+
+        
+        @include desktop(){
+            font-size: 7.5rem;
+            margin-left: 3.075em;
+            width: 40.6%;
+         }
     }
     &__options{
         & button {

@@ -195,6 +195,13 @@
   line-height: 1.385em;
   width: 63%;
 }
+@media screen and (min-width: 62.5rem) {
+  .header__subtitle {
+    font-size: 0.875rem;
+    margin-left: 26.78em;
+    padding-top: 6.57em;
+  }
+}
 .header__title {
   font-size: 3.5rem;
   font-family: "Old Standard TT";
@@ -206,6 +213,13 @@
 }
 .header__title--about {
   padding-top: 0.286em;
+}
+@media screen and (min-width: 62.5rem) {
+  .header__title {
+    font-size: 7.5rem;
+    margin-left: 3.075em;
+    width: 40.6%;
+  }
 }
 .header__options button {
   color: #FFFFFF;

@@ -1,5 +1,7 @@
 .desktop-nav{
     background-color: $fourth-color;
+    z-index: 2;
+    position: relative;
 }
 
 .nav{
@@ -9,12 +11,12 @@
     background-color: $first-color;
 
     @include desktop(){
-        max-width: 1420px;
+        max-width: 88.75em;
         height: 7.5em;
         margin: 0 auto;
         transform: translateY(50%);
         align-items: center;
-        z-index: 5;
+        
     }
 
 
@@ -35,8 +37,8 @@
         background-color: $first-color;
 
         @include desktop(){
-            width: 17.2%;
-            margin-right: 7.812em;
+           width: auto;
+            margin-right: 6.5%;
 
         }
 
@@ -83,8 +85,8 @@
         background-color: $first-color;
         
         @include desktop(){
-            width: 80%;
-           
+            text-align: center;
+  
         }
 
 
@@ -97,6 +99,8 @@
             width: 3.75em;
             height: 3.75em;
             padding: 1.125em;
+
+        
             }
             
         }
@@ -121,7 +125,8 @@
 
             @include desktop(){
                 display: block;
-                width : 50%;
+                width : 47%;
+    
             }
 
             & ul {

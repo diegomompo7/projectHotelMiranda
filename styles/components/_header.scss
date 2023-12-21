@@ -41,10 +41,11 @@
 
         
         @include desktop(){
+            line-height: 1.08em;
             font-size: 7.5rem;
             margin-left: 19.5%;
             width: 6.66em;
-            padding: 0.35em 0;
+            padding: 0.35em 0 0.26em 0;
 
             &--rest{
                 font-size: 4.5rem;

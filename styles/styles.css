@@ -213,10 +213,11 @@
 }
 @media screen and (min-width: 62.5rem) {
   .header__title {
+    line-height: 1.08em;
     font-size: 7.5rem;
     margin-left: 19.5%;
     width: 6.66em;
-    padding: 0.35em 0;
+    padding: 0.35em 0 0.26em 0;
   }
   .header__title--rest {
     font-size: 4.5rem;
@@ -540,6 +541,9 @@
 @media screen and (min-width: 62.5rem) {
   .aboutUs__text--title {
     font-size: 5em;
+    line-height: 1.125em;
+    padding-top: 0.5125em;
+    padding-bottom: 0.225em;
   }
 }
 .aboutUs__text--description {
@@ -688,6 +692,8 @@
 @media screen and (min-width: 62.5rem) {
   .rooms__title {
     font-size: 5em;
+    padding-top: 0.425em;
+    margin-bottom: 0.7625em;
   }
 }
 .rooms__swiper {
@@ -781,10 +787,10 @@
 }
 @media screen and (min-width: 62.5rem) {
   .rooms__swiper--slider--text--title {
-    font-size: 2rem;
-    padding-left: 1.21em;
+    font-size: 2.25rem;
+    padding-left: 1.05em;
     padding-bottom: 0.46em;
-    padding-top: 1.21em;
+    padding-top: 1.08em;
   }
 }
 .rooms__swiper--slider--text--description {
@@ -805,7 +811,6 @@
     align-self: center;
     width: 20%;
     margin-left: auto;
-    margin-right: 2.125em;
   }
 }
 .rooms__swiper--slider--text--price h1 {
@@ -820,6 +825,8 @@
 @media screen and (min-width: 62.5rem) {
   .rooms__swiper--slider--text--price h1 {
     font-size: 2.5rem;
+    padding: 0;
+    margin-bottom: 0;
   }
 }
 .rooms__swiper--slider--text--price p {
@@ -830,19 +837,41 @@
 @media screen and (min-width: 62.5rem) {
   .rooms__swiper--slider--text--price p {
     font-size: 1rem;
+    margin-right: 2.125em;
   }
 }
 
 .videoIntro {
   background-color: #222222;
   padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 62.5rem) {
+  .videoIntro {
+    display: grid;
+    padding-bottom: 50px;
+    grid-template-rows: auto;
+    grid-auto-columns: 60%;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .videoIntro__text {
+    grid-column: 1;
+    grid-row: 1;
+    position: absolute;
+    right: 50%;
+    transform: translateX(15%);
+    width: 590px;
+    height: 484px;
+  }
 }
 .videoIntro__text--subtitle {
   font-size: 0.875rem;
   letter-spacing: 0.2em;
-  padding-top: 4.571em;
   font-family: "Archivo";
   color: #BDAC8D;
+  padding-top: 130px;
 }
 .videoIntro__text--title {
   width: 89%;
@@ -854,6 +883,14 @@
   padding-bottom: 0.286em;
   color: #FFFFFF;
 }
+@media screen and (min-width: 62.5rem) {
+  .videoIntro__text--title {
+    font-size: 80px;
+    line-height: 1.0625;
+    padding-top: 0.45em;
+    padding-bottom: 0.2625em;
+  }
+}
 .videoIntro__text--description {
   font-size: 0.875rem;
   font-family: "Archivo";
@@ -862,12 +899,34 @@
   color: #C2C2C2;
   width: 93%;
 }
+@media screen and (min-width: 62.5rem) {
+  .videoIntro__text--description {
+    width: 82%;
+  }
+}
 .videoIntro__video {
   width: 89.3%;
   height: 270px;
 }
+@media screen and (min-width: 27.5rem) {
+  .videoIntro__video {
+    width: 440px;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .videoIntro__video {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: red;
+    width: 59.3%;
+    max-width: 570px;
+    min-width: 350px;
+    height: 460px;
+    margin-top: 120px;
+  }
+}
 .videoIntro__button {
-  width: 57.6%;
+  width: 216px;
   font-size: 0.875rem;
   font-family: "Archivo";
   font-weight: 700;
@@ -879,6 +938,20 @@
   margin-top: 3.571em;
   border: none;
   margin-bottom: 3.429em;
+}
+@media screen and (min-width: 62.5rem) {
+  .videoIntro__button {
+    grid-row: 1;
+    grid-column: 1;
+    margin-bottom: 0;
+    width: 216px;
+    height: 60px;
+    right: 50%;
+    position: absolute;
+    transform: translateX(-132%);
+    align-self: flex-end;
+    margin-left: auto;
+  }
 }
 
 .features__subtitle {

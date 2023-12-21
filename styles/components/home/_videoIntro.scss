@@ -1,14 +1,38 @@
 .videoIntro{
     background-color: $fourth-color;
     padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop(){
+        display: grid;
+        padding-bottom: 50px;
+        grid-template-rows: auto;
+        grid-auto-columns: 60%;
+
+    }
 
     &__text{
+        @include desktop{
+            grid-column: 1;
+            grid-row: 1;
+
+            position: absolute;
+            right: 50%;
+            transform: translateX(15%);
+
+            width: 590px;
+            height: 484px;
+           
+        }
         &--subtitle{
             font-size: 0.875rem;
             letter-spacing: 0.2em;
-            padding-top: 4.571em;
             font-family: "Archivo";
             color: $seventh-color;
+            padding-top: 130px;
+
+
         }
         &--title{
             width: 89%;
@@ -19,6 +43,13 @@
             padding-top: 0.571em;
             padding-bottom: 0.286em;
             color: $first-color;
+
+            @include desktop(){
+                font-size: 80px;
+                line-height: 1.0625;
+                padding-top: 0.45em;
+                padding-bottom: 0.2625em;
+            }
         }
         &--description{
             font-size: 0.875rem;
@@ -27,14 +58,35 @@
             padding-bottom: 2.286em;
             color: $eighth-color;
             width: 93%;
+
+            @include desktop(){
+                width:82%;
+
+            }
         }
     }
     &__video{
         width: 89.3%;
         height: 270px;
+
+        @include min440() {
+            width: 440px;
+
+        }
+
+        @include desktop{
+            grid-column: 2;
+            grid-row: 1;
+            background-color: red;
+            width: 59.3%;
+            max-width: 570px;
+            min-width: 350px;
+            height: 460px;
+            margin-top: 120px;
+        }
     }
     &__button{
-        width: 57.6%;
+        width:216px;
         font-size: 0.875rem;
         font-family: "Archivo";
         font-weight: 700;
@@ -46,5 +98,19 @@
         margin-top: 3.571em;
         border: none;
         margin-bottom: 3.429em;
+
+        @include desktop(){
+            
+            grid-row: 1;
+            grid-column: 1;
+            margin-bottom:  0;
+            width: 216px;
+            height: 60px;
+            right:  50%;
+            position: absolute;
+            transform: translateX(-132%);
+            align-self: flex-end;
+            margin-left: auto;
+        }
     }
 }

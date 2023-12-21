@@ -427,6 +427,15 @@
   padding-bottom: 1.875rem;
   width: 89.3%;
 }
+@media screen and (min-width: 62.5rem) {
+  .check__form {
+    display: flex;
+    margin-left: 0;
+    width: 100%;
+    padding-left: 19.5%;
+    height: 9.5em;
+  }
+}
 .check__form label {
   display: flex;
   font-size: 1rem;
@@ -434,6 +443,13 @@
   color: #FFFFFF;
   font-family: "Roboto";
   border-bottom: 1px solid #BEAD8E;
+}
+@media screen and (min-width: 25.3125rem) {
+  .check__form label {
+    width: 20.625em;
+    height: 4.68em;
+    margin-right: 1.875em;
+  }
 }
 .check__form svg {
   margin-top: 1.875em;
@@ -468,11 +484,38 @@
   text-decoration: none;
   color: #FFFFFF;
 }
+@media screen and (min-width: 25.3125rem) {
+  .check__form--button {
+    width: 23.21em;
+    height: 4.28em;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .check__form--button {
+    margin-left: 14.28em;
+  }
+}
 
+@media screen and (min-width: 62.5rem) {
+  .aboutUs {
+    display: flex;
+    margin: 120px auto 0 auto;
+    flex-direction: row-reverse;
+    width: 80.4%;
+  }
+}
 .aboutUs__text {
   margin-top: 3.75rem;
   margin-left: 1.25rem;
   margin-bottom: 3.75rem;
+}
+@media screen and (min-width: 27.5rem) {
+  .aboutUs__text {
+    width: 30%;
+    max-width: 457px;
+    margin-left: 76px;
+    margin-right: 19.2%;
+  }
 }
 .aboutUs__text--subtitle {
   font-size: 0.813rem;
@@ -481,6 +524,11 @@
   padding-top: 2.923em;
   letter-spacing: 0.215em;
 }
+@media screen and (min-width: 62.5rem) {
+  .aboutUs__text--subtitle {
+    font-size: 0.875rem;
+  }
+}
 .aboutUs__text--title {
   font-size: 3.5rem;
   font-family: "Old Standard TT";
@@ -488,6 +536,11 @@
   padding-top: 0.571em;
   padding-bottom: 0.25em;
   line-height: 1.071em;
+}
+@media screen and (min-width: 62.5rem) {
+  .aboutUs__text--title {
+    font-size: 80px;
+  }
 }
 .aboutUs__text--description {
   font-size: 0.875rem;
@@ -510,18 +563,49 @@
   padding-bottom: 1.643em;
   border: none;
 }
+.aboutUs__square {
+  margin-left: auto;
+}
+@media screen and (min-width: 62.5rem) {
+  .aboutUs__square {
+    width: 540px;
+  }
+}
 .aboutUs__strong {
-  width: 72%;
+  width: 270px;
   margin: 0 auto;
   padding-bottom: 2.625rem;
 }
+@media screen and (min-width: 62.5rem) {
+  .aboutUs__strong {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    max-width: 540px;
+    padding-bottom: 0;
+  }
+}
 .aboutUs__strong--img {
   width: 100%;
+}
+@media screen and (min-width: 62.5rem) {
+  .aboutUs__strong--img {
+    width: 47%;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 300px;
+  }
 }
 .aboutUs__strong--text {
   text-align: center;
   padding-top: 3.375rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 62.5rem) {
+  .aboutUs__strong--text {
+    width: 50%;
+    height: 300px;
+  }
 }
 .aboutUs__strong--text h3 {
   font-size: 1.875rem;
@@ -537,16 +621,37 @@
   line-height: 1.571em;
 }
 .aboutUs__luxury {
-  width: 72%;
+  width: 270px;
   margin: 0 auto;
+}
+@media screen and (min-width: 62.5rem) {
+  .aboutUs__luxury {
+    display: flex;
+    width: 100%;
+    max-width: 540px;
+  }
 }
 .aboutUs__luxury--img {
   width: 100%;
+}
+@media screen and (min-width: 62.5rem) {
+  .aboutUs__luxury--img {
+    margin-right: 30px;
+    height: 300px;
+    width: 50%;
+  }
 }
 .aboutUs__luxury--text {
   text-align: center;
   padding-top: 3.375rem;
   background-color: #222222;
+}
+@media screen and (min-width: 62.5rem) {
+  .aboutUs__luxury--text {
+    width: 50%;
+    margin-top: 30px;
+    height: 300px;
+  }
 }
 .aboutUs__luxury--text h3 {
   font-size: 1.875rem;

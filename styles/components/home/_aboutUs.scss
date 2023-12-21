@@ -1,8 +1,25 @@
 .aboutUs{
+
+    @include desktop(){
+        display: flex;
+        margin: 120px auto 0 auto;
+        flex-direction: row-reverse;
+
+        width: 80.4%;
+
+    }
     &__text{
         margin-top: 3.75rem;
         margin-left: 1.25rem;
         margin-bottom: 3.75rem;
+        
+        @include min440(){
+            width:30%;
+            max-width: 457px;
+            margin-left: 76px;
+            margin-right: 19.2%;
+     
+        }
         
         &--subtitle{
             font-size: 0.813rem;
@@ -10,6 +27,10 @@
             color: $sixth-color;
             padding-top: 2.923em;
             letter-spacing: 0.215em;
+
+            @include desktop(){
+                font-size: 0.875rem;
+            }
         }
         &--title{
             font-size: 3.5rem;
@@ -18,6 +39,10 @@
             padding-top: 0.571em;
             padding-bottom: 0.25em;
             line-height: 1.071em;
+
+            @include desktop(){
+                font-size: 80px;
+            }
         }
         &--description{
             font-size: 0.875rem;
@@ -41,17 +66,50 @@
             border: none;
         }
     }
+
+    &__square{
+        margin-left: auto;
+
+        @include desktop(){
+           width: 540px;
+        }
+    }
+
     &__strong{
-        width: 72%;
+        width: 270px;
         margin: 0 auto;
         padding-bottom: 2.625rem;
+
+        @include desktop(){
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            max-width: 540px;
+            padding-bottom: 0;
+
+
+        }
         &--img{
             width: 100%;
+
+            @include desktop(){
+                width: 47%;
+                margin-left: 30px;
+                margin-top: 30px;
+                height: 300px;
+            }
         }
         &--text{
             text-align: center;
             padding-top: 3.375rem;
             box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+
+            @include desktop(){
+
+                width: 50%;
+                height: 300px;
+            }
+
 
             & h3{
                 font-size: 1.875rem;
@@ -69,15 +127,37 @@
         }
     }
     &__luxury{
-        width: 72%;
+        width: 270px;
         margin: 0 auto;
+
+        @include desktop(){
+            display: flex;
+            width: 100%;
+            max-width: 540px;
+
+        }
         &--img{
             width: 100%;
+
+            
+            @include desktop(){
+                margin-right: 30px;
+                height: 300px;
+                width: 50%;
+           
+            }
         }
         &--text{
             text-align: center;
             padding-top: 3.375rem;
             background-color: $fourth-color;
+            @include desktop(){
+       
+                width: 50%;
+                margin-top: 30px;
+                height: 300px;
+            }
+
 
             & h3{
                 font-size: 1.875rem;

@@ -3,6 +3,11 @@
       @content;
     }
   }
+  @mixin min330() {
+    @media screen and (min-width: 330px){
+      @content;
+    }
+  }
   @mixin min375() {
     @media screen and (min-width: 23.4375rem) and (max-width: 999px) {
       @content;

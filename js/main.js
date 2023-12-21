@@ -35,13 +35,33 @@ const menuNav = () =>
 
 //SWIPER
 
-const swiper = new Swiper('.mySwiper', {
+console.log(document.body.offsetWidth)
 
+const swiper = new Swiper('.mySwiper', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
 });
+
+console.log(swiper[1])
+
+document.onscroll = () => {
+    const width = document.body.offsetWidth
+    if (width >= 1000) {
+        swiper[0].params.slidesPerView = 2
+        swiper[0].params.centeredSlides= true
+        swiper[0].params.spaceBetween= 30
+        swiper[0].update()
+
+    } else {
+        swiper[0].params.slidesPerView = 1;
+        swiper[0].params.centeredSlides = false;
+        swiper[0].params.spaceBetween = 0
+        swiper[0].update()
+    }
+}
+
 
 
 //

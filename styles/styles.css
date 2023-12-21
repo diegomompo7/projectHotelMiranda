@@ -499,7 +499,7 @@
 @media screen and (min-width: 62.5rem) {
   .aboutUs {
     display: flex;
-    margin: 120px auto 0 auto;
+    margin: 7.5em auto 0 auto;
     flex-direction: row-reverse;
     width: 80.4%;
   }
@@ -512,8 +512,8 @@
 @media screen and (min-width: 27.5rem) {
   .aboutUs__text {
     width: 30%;
-    max-width: 457px;
-    margin-left: 76px;
+    max-width: 28.56em;
+    margin-left: 4.75em;
     margin-right: 19.2%;
   }
 }
@@ -539,7 +539,7 @@
 }
 @media screen and (min-width: 62.5rem) {
   .aboutUs__text--title {
-    font-size: 80px;
+    font-size: 5em;
   }
 }
 .aboutUs__text--description {
@@ -568,11 +568,11 @@
 }
 @media screen and (min-width: 62.5rem) {
   .aboutUs__square {
-    width: 540px;
+    width: 33.75em;
   }
 }
 .aboutUs__strong {
-  width: 270px;
+  width: 16.875em;
   margin: 0 auto;
   padding-bottom: 2.625rem;
 }
@@ -581,7 +581,7 @@
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    max-width: 540px;
+    max-width: 33.75em;
     padding-bottom: 0;
   }
 }
@@ -591,9 +591,8 @@
 @media screen and (min-width: 62.5rem) {
   .aboutUs__strong--img {
     width: 47%;
-    margin-left: 30px;
-    margin-top: 30px;
-    height: 300px;
+    margin-left: 5%;
+    margin-top: 1.875em;
   }
 }
 .aboutUs__strong--text {
@@ -604,7 +603,7 @@
 @media screen and (min-width: 62.5rem) {
   .aboutUs__strong--text {
     width: 50%;
-    height: 300px;
+    height: auto;
   }
 }
 .aboutUs__strong--text h3 {
@@ -621,14 +620,14 @@
   line-height: 1.571em;
 }
 .aboutUs__luxury {
-  width: 270px;
+  width: 16.875em;
   margin: 0 auto;
 }
 @media screen and (min-width: 62.5rem) {
   .aboutUs__luxury {
     display: flex;
     width: 100%;
-    max-width: 540px;
+    max-width: 33.75em;
   }
 }
 .aboutUs__luxury--img {
@@ -636,8 +635,9 @@
 }
 @media screen and (min-width: 62.5rem) {
   .aboutUs__luxury--img {
-    margin-right: 30px;
-    height: 300px;
+    margin-right: 5%;
+    margin-top: 1.875em;
+    height: 18.75em;
     width: 50%;
   }
 }
@@ -648,9 +648,9 @@
 }
 @media screen and (min-width: 62.5rem) {
   .aboutUs__luxury--text {
-    width: 50%;
-    margin-top: 30px;
-    height: 300px;
+    width: 16.875em;
+    margin-top: 3.3125em;
+    height: auto;
   }
 }
 .aboutUs__luxury--text h3 {
@@ -671,7 +671,6 @@
 
 .rooms {
   margin-top: 3.75rem;
-  text-align: center;
 }
 .rooms__subtitle {
   font-size: 0.875rem;
@@ -686,10 +685,30 @@
   padding-top: 0.429em;
   margin-bottom: 0.357em;
 }
+@media screen and (min-width: 62.5rem) {
+  .rooms__title {
+    font-size: 5em;
+  }
+}
 .rooms__swiper {
-  width: 375px;
+  width: 23.43em;
   height: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 62.5rem) {
+  .rooms__swiper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .rooms__swiper .swiper-button-next {
+    right: 17%;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .rooms__swiper .swiper-button-prev {
+    left: 17%;
+  }
 }
 .rooms__swiper .swiper-button-next, .rooms__swiper .swiper-button-prev {
   color: #111111;
@@ -699,6 +718,14 @@
   font-size: 0.563em;
   transform: translateY(-10.333em);
 }
+@media screen and (min-width: 62.5rem) {
+  .rooms__swiper .swiper-button-next, .rooms__swiper .swiper-button-prev {
+    font-size: 1.125rem;
+    width: 4em;
+    height: 4em;
+    transform: translateY(-4.6em);
+  }
+}
 .rooms__swiper .swiper-button-next:hover, .rooms__swiper .swiper-button-prev:hover {
   background-color: #BDAC8D;
   color: #FFFFFF;
@@ -706,8 +733,18 @@
 .rooms__swiper .swiper-button-next:after, .rooms__swiper .swiper-button-prev:after {
   font-size: 0.563rem;
 }
+@media screen and (min-width: 62.5rem) {
+  .rooms__swiper .swiper-button-next:after, .rooms__swiper .swiper-button-prev:after {
+    font-size: 1.125rem;
+  }
+}
 .rooms__swiper--slider {
   margin-bottom: 1.875em;
+}
+@media screen and (min-width: 62.5rem) {
+  .rooms__swiper--slider {
+    width: 48.125em;
+  }
 }
 .rooms__swiper--slider--have {
   background-color: white;
@@ -727,6 +764,14 @@
   width: 89%;
   margin: 0 auto;
 }
+@media screen and (min-width: 62.5rem) {
+  .rooms__swiper--slider--text {
+    display: flex;
+    text-align: left;
+    transform: translateY(-30%);
+    background-color: #FFFFFF;
+  }
+}
 .rooms__swiper--slider--text--title {
   font-size: 1.75rem;
   font-weight: 400;
@@ -734,14 +779,36 @@
   padding-top: 0.679em;
   padding-bottom: 1.107em;
 }
+@media screen and (min-width: 62.5rem) {
+  .rooms__swiper--slider--text--title {
+    font-size: 2rem;
+    padding-left: 1.21em;
+    padding-bottom: 0.46em;
+    padding-top: 1.21em;
+  }
+}
 .rooms__swiper--slider--text--description {
   font-size: 0.875rem;
   font-family: "Roboto";
-  padding: 0 2.929em;
   line-height: 1.714em;
   color: #777777;
 }
-.rooms__swiper--slider--text--price {
+@media screen and (min-width: 62.5rem) {
+  .rooms__swiper--slider--text--description {
+    padding-left: 2.78em;
+    max-width: 31.21em;
+    padding-bottom: 3.07em;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .rooms__swiper--slider--text--price {
+    align-self: center;
+    width: 20%;
+    margin-left: auto;
+    margin-right: 2.125em;
+  }
+}
+.rooms__swiper--slider--text--price h1 {
   font-family: "Archivo";
   font-size: 2rem;
   color: #BEAD8E;
@@ -750,10 +817,20 @@
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 62.5rem) {
+  .rooms__swiper--slider--text--price h1 {
+    font-size: 2.5rem;
+  }
+}
 .rooms__swiper--slider--text--price p {
   font-size: 0.815rem;
   align-self: flex-end;
   margin-bottom: 0.462em;
+}
+@media screen and (min-width: 62.5rem) {
+  .rooms__swiper--slider--text--price p {
+    font-size: 1rem;
+  }
 }
 
 .videoIntro {

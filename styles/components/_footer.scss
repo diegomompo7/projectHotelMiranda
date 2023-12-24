@@ -7,7 +7,33 @@
     font-size: 1rem;
     font-weight: 700;
 
+    @include desktop(){
+        display: flex;
+        justify-content: space-between;
+        padding-top: 29px;
+        padding-bottom: 24px;
+        
+    }
+
     &__copy{
         padding-bottom: 1.5em;
+
+        @include desktop(){
+            padding-bottom: 0;
+            margin-left: 18.22%;
+        }
+    }
+    &__terms{
+        &--left{
+            margin-right: 0.93753em;
+        }
+        &--right{
+            margin-left: 0.93753em;
+        }
+
+        @include desktop(){
+            padding-bottom: 0;
+            margin-right: 23.75em;
+        }
     }
 }

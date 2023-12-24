@@ -286,8 +286,14 @@
 .swiper-container {
   --swiper-pagination-color:#BEAD8E;
   width: 89%;
-  height: 335px;
+  height: 20.9375em;
   margin: 0 auto;
+  max-width: 23.125em;
+}
+@media screen and (min-width: 62.5rem) {
+  .swiper-container {
+    max-width: 73.125em;
+  }
 }
 .swiper-container--about {
   width: 100%;
@@ -295,6 +301,9 @@
   padding-left: 1.25rem;
 }
 
+.swiper-slider {
+  text-align: center;
+}
 .swiper-slider--img {
   width: 100%;
   height: 100%;

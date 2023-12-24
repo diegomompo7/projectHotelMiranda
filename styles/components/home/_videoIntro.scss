@@ -1,12 +1,12 @@
 .videoIntro{
     background-color: $fourth-color;
-    padding-left: 1.25rem;
+    padding-left: 1.25em;
     display: flex;
     flex-direction: column;
 
     @include desktop(){
         display: grid;
-        padding-bottom: 50px;
+        padding-bottom: 3.125em;
         grid-template-rows: auto;
         grid-auto-columns: 60%;
 
@@ -21,8 +21,8 @@
             right: 50%;
             transform: translateX(15%);
 
-            width: 590px;
-            height: 484px;
+            width: 36.875em;
+            height: 30.25em;
            
         }
         &--subtitle{
@@ -30,7 +30,7 @@
             letter-spacing: 0.2em;
             font-family: "Archivo";
             color: $seventh-color;
-            padding-top: 130px;
+            padding-top: 9.28em;
 
 
         }
@@ -45,8 +45,8 @@
             color: $first-color;
 
             @include desktop(){
-                font-size: 80px;
-                line-height: 1.0625;
+                font-size: 5em;
+                line-height: 1.0625em;
                 padding-top: 0.45em;
                 padding-bottom: 0.2625em;
             }
@@ -67,26 +67,25 @@
     }
     &__video{
         width: 89.3%;
-        height: 270px;
+        height: 16.875em;
 
         @include min440() {
-            width: 440px;
+            width: 27.5em;
 
         }
 
         @include desktop{
             grid-column: 2;
             grid-row: 1;
-            background-color: red;
             width: 59.3%;
-            max-width: 570px;
-            min-width: 350px;
-            height: 460px;
-            margin-top: 120px;
+            max-width: 35.625em;
+            min-width: 21.875em;
+            height: 28.75em;
+            margin-top: 7.5em;
         }
     }
     &__button{
-        width:216px;
+        width:15.42em;
         font-size: 0.875rem;
         font-family: "Archivo";
         font-weight: 700;
@@ -104,8 +103,8 @@
             grid-row: 1;
             grid-column: 1;
             margin-bottom:  0;
-            width: 216px;
-            height: 60px;
+            width:15.42em;
+            height: 4.28em;
             right:  50%;
             position: absolute;
             transform: translateX(-132%);

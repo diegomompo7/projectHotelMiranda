@@ -57,6 +57,23 @@ const swiperFeatures = new Swiper('.features__swiper', {
 
 });
 
+const swiperMenu = new Swiper('.menu__items', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    centeredSlides: true,
+    spaceBetween: 10,  
+    navigation: {
+        nextEl: ".menu__button--next",
+        prevEl: ".menu__button--prev",
+        lockClass: '.swiper-button-lock',
+      },
+    grid: {
+        rows:3,
+        fill: "row",
+    },
+
+});
+
 
 
 document.onscroll = () => {
@@ -73,19 +90,32 @@ document.onscroll = () => {
         swiperFeatures.params.centeredSlides = false
         swiperFeatures.update()
 
+        swiperMenu.params.slidesPerView = 2
+        swiperMenu.params.slidesPerGroup= 6
+        swiperMenu.params.grid.rows = 3
+        swiperMenu.params.grid.fill = "row"
+        swiperMenu.params.centeredSlides = false
+        swiperMenu.update()
+
     } else {
         swiper[0].params.slidesPerView = 1;
         swiper[0].params.centeredSlides = false;
         swiper[0].params.spaceBetween = 0
-
+        swiper[0].update()
 
         swiperFeatures.params.slidesPerView = 1
         swiperFeatures.params.slidesPerGroup= 1
-        swiperFeatures.params.grid.rows = 1
+        swiperFeatures.params.grid.rows = 3
         swiperFeatures.params.centeredSlides = true
-
         swiperFeatures.update()
-        swiper[0].update()
+
+        swiperMenu.params.slidesPerView = 1
+        swiperMenu.params.slidesPerGroup= 1
+        swiperMenu.params.grid.rows = 3
+        swiperMenu.params.grid.fill = "row"
+        swiperMenu.params.centeredSlides = true
+        swiperMenu.update()
+    
     }
 }
 

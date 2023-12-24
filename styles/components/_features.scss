@@ -30,7 +30,7 @@
     }
     &__swiper {
         width: 100%;
-        max-width: 383px;
+        max-width: 23.9375em;
         margin: 0 auto;
         padding-bottom: 2.563rem;
 
@@ -39,7 +39,7 @@
         --swiper-pagination-color:#BEAD8E;
 
         @include desktop(){
-            max-width: 1188px;
+            max-width: 74.25em;
         }
 
         &--slider {
@@ -60,8 +60,8 @@
                 transform: translateY(-70%);
                 
                 &:hover{
-                    width: 100px;
-                    height: 100px;
+                    width: 6.25em;
+                    height: 6.25em;
                 }
             }
 

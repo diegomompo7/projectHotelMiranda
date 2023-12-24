@@ -7,6 +7,12 @@
     &__img{
         position: relative;
         left: 73%;
+
+        @include desktop(){
+            left: 4.16%;
+            width: 14.3125em;
+            height: 14.3125em;
+        }
     } 
     
 
@@ -14,6 +20,11 @@
         font-size: 0.875rem;
         letter-spacing: 0.2em;
         color: $sixth-color;
+
+
+        @include desktop(){
+            padding-left: 22%;
+        }
     }
     &__title{
         font-size: 3.5rem;
@@ -23,16 +34,38 @@
         padding-top: 0.429em;
         padding-bottom: 0.554em;
         color: $fourth-color;
+
+        @include desktop(){
+            font-size: 5rem;
+            padding-left: 21%;
+            line-height: auto;
+            padding-top: 0.425em;
+            padding-bottom: 0.5375em;
+        }
     }
     &__items{
-        &--card{
-            width: 100%;
-            max-width: 375px;
+        @include desktop(){
+            max-width: 73.125em;
+            left: 6.25em;
+        }
+
+        swiper-button-lock {
+            display: block;
+        }
+
+        .swiper-slide {
+
             display: flex;
+
+        }        
+        &--card{
+ 
             margin-bottom: 1rem;
 
+
             & img {
-                width: 32%;
+                width: 7.5em;
+                height: 7.5em;
             }
 
             &--text{
@@ -56,32 +89,85 @@
                 padding-left: 2.143em;
                 width: 90%;
 
+                @include desktop(){
+                    width: 75%
+    
+                }
               }
         }
     }
     &__button{
 
-        text-align: end;
-
-        & button{
-            border: none;
-            padding: 13px 12px;
-        }
-
-        & svg {
-            width: 0.875rem;
-            height: 0.875rem;
-        }
-
         &--prev{
             color: $second-color;
             background-color: $ninth-color;
             margin-right: 1rem;
+            border: none;
+            padding: 0.8125em 0.75em;
+            margin-left: 65%;
+
+            @include desktop(){
+                margin-left: 83%;
+                position: relative;
+                bottom: 33.125rem;
+                padding: 1.3125rem 1.25rem;
+            } 
+
+
+            & svg {
+                width: 0.875rem;
+                height: 0.875rem;
+                fill: $second-color;
+                @include desktop(){
+                    width: 1.5em;
+                    height: 1.5em;
+                }
+
+                &:hover{
+                    fill: $first-color;
+                }
+            }
+
+ 
+            &:hover{
+                background-color: $seventh-color;
+            }
         }
 
         &--next{
-            color: $first-color;
-            background-color: $third-color;
+            color: $second-color;
+            background-color: $ninth-color;
+            border: none;
+            padding: 0.8125em 0.75em;
+
+
+            @include desktop(){
+                padding: 1.3125rem 1.25rem;
+                position: relative;
+                bottom: 33.125rem;
+            } 
+
+
+            & svg {
+                width: 0.875rem;
+                height: 0.875rem;
+                fill: $second-color;
+                @include desktop(){
+                    width: 1.5em;
+                    height: 1.5em;
+                }
+
+                &:hover{
+                    fill: $first-color;
+                }
+            }
+
+             
+            &:hover{
+                background-color: $seventh-color;
+            }
+
+
         }
     }
 }

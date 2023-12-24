@@ -333,7 +333,6 @@
 .swiper-slider--img {
   width: 100%;
   height: 100%;
-  padding-bottom: 1.9em;
 }
 
 .info {
@@ -347,6 +346,7 @@
     padding-right: 6.5%;
     padding-top: 6.25em;
     margin-top: 8.1875em;
+    padding-bottom: 6.25em;
   }
 }
 .info__hotel {
@@ -1280,7 +1280,7 @@
   .stats {
     width: 61%;
     max-width: 1170px;
-    margin: 0 auto;
+    margin: 7.5em auto 0 auto;
   }
 }
 .stats__items {

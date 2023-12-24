@@ -6,7 +6,8 @@
     @include desktop(){
         width: 61%;
         max-width: 1170px;
-        margin: 0 auto;    
+        margin: 7.5em auto 0 auto;
+        
     }
 
     &__items{

@@ -22,12 +22,11 @@ btnClosed.appendChild(path);
 
 menuMobile.style.display = "none"
 
-const menuNav = () =>  
-{
-    if(menuMobile.style.display === "none"){
+const menuNav = () => {
+    if (menuMobile.style.display === "none") {
         menuMobile.style.display = "block"
         document.querySelector("nav").replaceChild(btnClosed, btnMenu)
-    }else{
+    } else {
         menuMobile.style.display = "none"
         document.querySelector("nav").replaceChild(btnMenu, btnClosed)
     }
@@ -44,20 +43,48 @@ const swiper = new Swiper('.mySwiper', {
     },
 });
 
-console.log(swiper[1])
+const swiperFeatures = new Swiper('.features__swiper', {
+    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    grid: {
+        rows: 1, // Establecer inicialmente el número de filas
+    },
+
+});
+
+
 
 document.onscroll = () => {
     const width = document.body.offsetWidth
     if (width >= 1000) {
         swiper[0].params.slidesPerView = 2
-        swiper[0].params.centeredSlides= true
-        swiper[0].params.spaceBetween= 30
+        swiper[0].params.centeredSlides = true
+        swiper[0].params.spaceBetween = 30
         swiper[0].update()
+
+        swiperFeatures.params.slidesPerView = 3
+        swiperFeatures.params.grid.rows = 2
+        swiperFeatures.params.grid.fill = "row"
+        swiperFeatures.params.centeredSlides = false
+        swiperFeatures.update()
 
     } else {
         swiper[0].params.slidesPerView = 1;
         swiper[0].params.centeredSlides = false;
         swiper[0].params.spaceBetween = 0
+
+
+        swiperFeatures.params.slidesPerView = 1
+        swiperFeatures.params.slidesPerGroup= 1
+        swiperFeatures.params.grid.rows = 1
+        swiperFeatures.params.centeredSlides = true
+
+        swiperFeatures.update()
         swiper[0].update()
     }
 }

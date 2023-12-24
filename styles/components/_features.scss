@@ -6,6 +6,10 @@
         color: $sixth-color;
         font-family: "Archivo";
         text-align: center;
+
+        @include desktop(){
+            padding-top: 1.214em;
+        }
     }
     &__title{
         text-align: center;
@@ -16,15 +20,27 @@
         padding-top: 0.429em;
         padding-bottom: 0.554em;
         color: $fourth-color;
+
+        @include desktop(){
+            font-size: 5em;
+            line-height: 1em;
+            padding-top: 0.3em;
+            padding-bottom: 0.3875em;
+        }
     }
     &__swiper {
         width: 100%;
         max-width: 383px;
         margin: 0 auto;
         padding-bottom: 2.563rem;
-        
 
+        
+        --swipper-pagination: false;
         --swiper-pagination-color:#BEAD8E;
+
+        @include desktop(){
+            max-width: 1188px;
+        }
 
         &--slider {
             

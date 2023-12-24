@@ -961,6 +961,11 @@
   font-family: "Archivo";
   text-align: center;
 }
+@media screen and (min-width: 62.5rem) {
+  .features__subtitle {
+    padding-top: 1.214em;
+  }
+}
 .features__title {
   text-align: center;
   font-size: 3.5rem;
@@ -971,12 +976,26 @@
   padding-bottom: 0.554em;
   color: #222222;
 }
+@media screen and (min-width: 62.5rem) {
+  .features__title {
+    font-size: 5em;
+    line-height: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3875em;
+  }
+}
 .features__swiper {
   width: 100%;
   max-width: 383px;
   margin: 0 auto;
   padding-bottom: 2.563rem;
+  --swipper-pagination: false;
   --swiper-pagination-color:#BEAD8E;
+}
+@media screen and (min-width: 62.5rem) {
+  .features__swiper {
+    max-width: 1188px;
+  }
 }
 .features__swiper--slider {
   margin-bottom: 2rem;

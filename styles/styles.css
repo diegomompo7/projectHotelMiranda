@@ -222,7 +222,7 @@
   .header__subtitle {
     font-size: 0.875rem;
     margin-left: 19.5%;
-    padding-top: 184px;
+    padding-top: 14.153em;
   }
 }
 .header__title {
@@ -299,7 +299,6 @@
 .header__nav a {
   padding: 0 0.68em;
   text-decoration: none;
-  background-color: aqua;
   pointer-events: initial;
 }
 .header__nav--home, .header__nav p {
@@ -319,12 +318,8 @@
 @media screen and (min-width: 62.5rem) {
   .swiper-container {
     max-width: 73.125em;
+    width: 100%;
   }
-}
-.swiper-container--about {
-  width: 100%;
-  height: 14.375rem;
-  padding-left: 1.25rem;
 }
 
 .swiper-slider {
@@ -346,7 +341,7 @@
     justify-content: center;
     padding-right: 6.5%;
     padding-top: 6.25em;
-    margin-top: 8.1875em;
+    padding-bottom: 6.25em;
   }
 }
 .info__hotel {
@@ -445,10 +440,11 @@
 .info__services--lists li {
   width: 70%;
   padding-bottom: 2.5em;
-  margin-right: 8.9375em;
+  margin-right: 4.4375em;
 }
 @media screen and (min-width: 62.5rem) {
   .info__services--lists li {
+    margin-right: 8.9375em;
     padding-bottom: 2em;
   }
 }
@@ -532,6 +528,7 @@
   font-size: 0.875rem;
   font-family: "Roboto";
   margin-bottom: 1.214em;
+  width: 90%;
 }
 .check__form--arrival {
   margin-bottom: 1.875em;
@@ -581,8 +578,12 @@
 }
 @media screen and (min-width: 27.5rem) {
   .aboutUs__text {
-    width: 30%;
     max-width: 28.56em;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .aboutUs__text {
+    width: 30%;
     margin-left: 4.75em;
     margin-right: 19.2%;
   }
@@ -623,6 +624,11 @@
   padding-right: 2.143em;
   padding-bottom: 1.714em;
   color: #777777;
+}
+@media screen and (min-width: 62.5rem) {
+  .aboutUs__text--description {
+    padding-right: 2.9em;
+  }
 }
 .aboutUs__text--button {
   width: 57.6%;
@@ -710,8 +716,7 @@
   .aboutUs__luxury--img {
     margin-right: 5%;
     margin-top: 1.875em;
-    height: 18.75em;
-    width: 50%;
+    width: 47%;
   }
 }
 .aboutUs__luxury--text {
@@ -766,7 +771,7 @@
   }
 }
 .rooms__swiper {
-  width: 23.43em;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
 }
@@ -921,7 +926,7 @@
     display: grid;
     padding-bottom: 3.125em;
     grid-template-rows: auto;
-    grid-auto-columns: 60%;
+    grid-auto-columns: 55%;
   }
 }
 @media screen and (min-width: 62.5rem) {
@@ -929,8 +934,8 @@
     grid-column: 1;
     grid-row: 1;
     position: absolute;
-    right: 50%;
-    transform: translateX(15%);
+    right: 55%;
+    transform: translateX(25%);
     width: 36.875em;
     height: 30.25em;
   }
@@ -990,6 +995,8 @@
     max-width: 35.625em;
     min-width: 21.875em;
     height: 28.75em;
+    -o-object-fit: fill;
+       object-fit: fill;
     margin-top: 7.5em;
   }
 }
@@ -1014,7 +1021,7 @@
     margin-bottom: 0;
     width: 15.42em;
     height: 4.28em;
-    right: 50%;
+    right: 52%;
     position: absolute;
     transform: translateX(-132%);
     align-self: flex-end;
@@ -1107,11 +1114,17 @@
 .about {
   background-color: #222222;
 }
+@media screen and (min-width: 62.5rem) {
+  .about {
+    padding-top: 7.375em;
+  }
+}
 .about__slider {
   background-color: #292929;
 }
 .about__number {
   opacity: 1;
+  padding-right: 0;
 }
 .about__text {
   color: #FFFFFF;
@@ -1279,8 +1292,8 @@
 @media screen and (min-width: 62.5rem) {
   .stats {
     width: 61%;
-    max-width: 1170px;
-    margin: 0 auto;
+    max-width: 73.125em;
+    margin: 7.5em auto 8.1875em auto;
   }
 }
 .stats__items {
@@ -1333,9 +1346,28 @@
   width: 89.3%;
   margin: 3.75rem auto;
 }
+@media screen and (min-width: 27.5rem) {
+  .more {
+    max-width: 27.5em;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .more {
+    max-width: 73.25em;
+  }
+}
 .more__video {
   width: 100%;
   height: 11.625rem;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+@media screen and (min-width: 62.5rem) {
+  .more__video {
+    width: 100%;
+    height: 40.625em;
+    margin: 0 auto;
+  }
 }
 .more__title {
   white-space: break-word;
@@ -1347,6 +1379,14 @@
   font-weight: 400;
   letter-spacing: -0.036em;
   margin-bottom: 2.125em;
+}
+@media screen and (min-width: 62.5rem) {
+  .more__title {
+    font-size: 4.5em;
+    width: 96.78%;
+    margin-bottom: 0.972em;
+    letter-spacing: 0;
+  }
 }
 .more__icons {
   display: flex;
@@ -1360,6 +1400,15 @@
   text-align: center;
   margin-bottom: 1.083em;
 }
+@media screen and (min-width: 62.5rem) {
+  .more__icons div {
+    margin: 0;
+    margin-right: 2.83em;
+    margin-bottom: 6.66em;
+    width: 16.66em;
+    padding: 4.33em 0 3.66em 0;
+  }
+}
 .more__icons div h1 {
   font-size: 1em;
   font-family: "Archivo";
@@ -1367,12 +1416,26 @@
   padding-top: 1em;
 }
 .more__icons div img {
-  width: 54px;
-  height: 53px;
+  width: 3.375em;
+  height: 3.125em;
+}
+@media screen and (min-width: 62.5rem) {
+  .more__icons div img {
+    width: 4.5em;
+    height: 4.1875em;
+  }
 }
 .more__icons--container {
   background-color: #FFFFFF;
   color: #222222;
+}
+.more__icons--container--bbq {
+  display: none;
+}
+@media screen and (min-width: 62.5rem) {
+  .more__icons--container--bbq {
+    display: block;
+  }
 }
 .more__icons--container:hover {
   background-color: #BEAD8E;
@@ -1388,8 +1451,26 @@
   width: 88%;
   margin: 0 auto;
 }
+@media screen and (min-width: 62.5rem) {
+  .more__restaurant {
+    display: flex;
+    width: 100%;
+  }
+}
 .more__restaurant--img {
   width: 100%;
+}
+@media screen and (min-width: 62.5rem) {
+  .more__restaurant--img {
+    width: 45.22%;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .more__restaurant--text {
+    width: 40.04%;
+    margin-left: 3.5625em;
+    margin-top: 1.25em;
+  }
 }
 .more__restaurant--text h3 {
   font-size: 0.875rem;
@@ -1407,6 +1488,11 @@
   padding: 0.65em 0;
   letter-spacing: -0.026em;
   color: #222222;
+}
+@media screen and (min-width: 62.5rem) {
+  .more__restaurant--text h1 {
+    letter-spacing: 0;
+  }
 }
 .more__restaurant--text p {
   font-size: 0.875rem;
@@ -1431,15 +1517,32 @@
 
 .counter {
   width: 89.3%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 27.5rem) {
+  .counter {
+    max-width: 27.5em;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .counter {
+    max-width: 73.453em;
+    margin-bottom: 5.6875em;
+  }
 }
 .counter__subtitle {
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   font-family: "Archivo";
-  padding-top: 2.286em;
+  padding-top: 4.17em;
   padding-left: 1.429em;
   color: #777777;
+}
+@media screen and (min-width: 62.5rem) {
+  .counter__subtitle {
+    padding-top: 7.714em;
+  }
 }
 .counter__title {
   font-size: 3.5rem;
@@ -1450,14 +1553,33 @@
   color: #222222;
   padding-left: 0.357em;
 }
+@media screen and (min-width: 62.5rem) {
+  .counter__title {
+    font-size: 5.714rem;
+    padding-top: 0.325em;
+    padding-left: 0.0625em;
+  }
+}
 .counter__items {
   display: flex;
   flex-direction: column;
   padding-left: 1.25rem;
 }
+@media screen and (min-width: 62.5rem) {
+  .counter__items {
+    flex-direction: row;
+    padding-left: 2.5em;
+  }
+}
 .counter__items--card {
   margin-bottom: 3.75em;
   display: flex;
+}
+@media screen and (min-width: 62.5rem) {
+  .counter__items--card {
+    width: 100%;
+    padding-right: 1.8125em;
+  }
 }
 .counter__items--card--icon {
   transform: translateY(10%);
@@ -1479,19 +1601,38 @@
   margin-left: auto;
   transform: translateY(100%);
 }
+@media screen and (min-width: 62.5rem) {
+  .counter__items--card--arrow {
+    margin-left: 3.1875em;
+  }
+}
 
 .rooms {
   margin-top: 3.75rem;
   text-align: center;
+  margin-bottom: 7.5em;
 }
 .rooms__items {
-  width: 375px;
+  width: 23.4375em;
   margin: 0 auto;
+}
+@media screen and (min-width: 62.5rem) {
+  .rooms__items {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: 73.125em;
+  }
 }
 .rooms__items--card {
   width: 89.3%;
   margin: 0 auto;
   padding-bottom: 1.625em;
+}
+@media screen and (min-width: 62.5rem) {
+  .rooms__items--card {
+    width: 23.125em;
+  }
 }
 .rooms__items--card--have {
   background-color: white;
@@ -1869,13 +2010,50 @@
 .offers__items {
   margin: 0 auto;
 }
+@media screen and (min-width: 62.5rem) {
+  .offers__items {
+    width: 100%;
+    max-width: 73.125em;
+  }
+}
 .offers__items--card {
   width: 89.3%;
   margin: 0 auto;
   padding-bottom: 1.625em;
 }
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card {
+    width: 100%;
+  }
+}
 .offers__items--card img {
   width: 100%;
+}
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card img {
+    height: 35.625em;
+  }
+}
+.offers__items--card--info {
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info {
+    width: 65.625em;
+    margin: 0 auto;
+    border-top: 0.375em solid #BDAC8D;
+    transform: translateY(-10%);
+  }
+}
+.offers__items--card--info hr {
+  display: none;
+  border: 1px solid #ECECEC;
+}
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info hr {
+    margin: 1.25em 2.8125em 2.375em 3.6875em;
+    display: block;
+  }
 }
 .offers__items--card--info--principal {
   display: flex;
@@ -1892,12 +2070,25 @@
   padding-left: 1.429em;
   color: #777777;
 }
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info--principal--text h3 {
+    padding-top: 4.142em;
+    padding-left: 4.214em;
+  }
+}
 .offers__items--card--info--principal--text h1 {
   font-size: 2.5rem;
   font-weight: 400;
   font-family: "Old Standard TT";
   padding-top: 0.3em;
   padding-left: 0.5em;
+}
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info--principal--text h1 {
+    padding-left: 1.229em;
+    font-size: 3em;
+    padding-top: 0.104em;
+  }
 }
 .offers__items--card--info--principal--text h1 a {
   text-decoration: none;
@@ -1909,6 +2100,12 @@
   width: 6%;
   transform: translate(-6.875rem, -6.875rem);
 }
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info--principal--price {
+    transform: translate(0, -1em);
+    width: 20%;
+  }
+}
 .offers__items--card--info--principal--price--original {
   font-size: 1.438rem;
   color: #BEAD8E;
@@ -1917,20 +2114,48 @@
   margin-left: 0.87em;
   margin-bottom: 0.957em;
 }
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info--principal--price--original {
+    font-size: 1.875rem;
+    padding-top: 1.833em;
+    margin-bottom: 0.5em;
+  }
+}
 .offers__items--card--info--principal--price--original p {
   font-size: 0.688rem;
   align-self: flex-end;
   margin-bottom: 0.462em;
+  font-size: 0.75rem;
 }
 .offers__items--card--info--principal--price--offer {
   font-size: 1.875rem;
   color: #DE5777;
   display: flex;
 }
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info--principal--price--offer {
+    font-size: 2.5rem;
+  }
+}
 .offers__items--card--info--principal--price--offer p {
   font-size: 0.75rem;
   align-self: flex-end;
   margin-bottom: 0.417em;
+}
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info--principal--price--offer p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info--description {
+    padding-left: 3.687em;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info--description--text {
+    display: flex;
+  }
 }
 .offers__items--card--info--description--text--desc {
   white-space: break-word;
@@ -1942,6 +2167,14 @@
   line-height: 1.714em;
   color: #777777;
 }
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info--description--text--desc {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+  }
+}
 .offers__items--card--info--description--text--have {
   width: 100%;
   display: grid;
@@ -1950,8 +2183,18 @@
   margin-bottom: 1rem;
   padding-left: 1.429em;
 }
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info--description--text--have {
+    width: 36%;
+    -moz-column-gap: 2.625em;
+         column-gap: 2.625em;
+    gap: 0.5625em;
+    margin-left: auto;
+    margin-right: 4.0625em;
+  }
+}
 .offers__items--card--info--description--button {
-  width: 64.4%;
+  width: 15.428em;
   font-size: 0.875rem;
   font-family: "Archivo";
   font-weight: 700;
@@ -1963,10 +2206,21 @@
   border: none;
   margin-bottom: 0.714em;
 }
+@media screen and (min-width: 62.5rem) {
+  .offers__items--card--info--description--button {
+    transform: translateY(-70%);
+  }
+}
 
 .popular {
   background-color: #222222;
   text-align: center;
+}
+@media screen and (min-width: 62.5rem) {
+  .popular {
+    padding-bottom: 7.5em;
+    margin-bottom: 7.5em;
+  }
 }
 .popular__subtitle {
   font-size: 0.875rem;
@@ -1984,11 +2238,24 @@
   padding-bottom: 1.2em;
   color: #FFFFFF;
 }
+@media screen and (min-width: 62.5rem) {
+  .popular__title {
+    font-size: 5rem;
+    padding-top: 1.1875em;
+    padding-bottom: 0.875em;
+  }
+}
 .popular__swiper {
   text-align: center;
   width: 89.3%;
-  max-width: 370px;
+  max-width: 23.125em;
   --swiper-navigation-top-offset: 30.6%;
+}
+@media screen and (min-width: 62.5rem) {
+  .popular__swiper {
+    width: 100%;
+    max-width: 73.125em;
+  }
 }
 .popular__swiper .swiper-button-next, .popular__swiper .swiper-button-prev {
   color: #111111;
@@ -2007,6 +2274,11 @@
 .popular__swiper--slider {
   background-color: #FFFFFF;
   margin-bottom: 3rem;
+}
+@media screen and (min-width: 62.5rem) {
+  .popular__swiper--slider {
+    width: 23.125em;
+  }
 }
 .popular__swiper--slider--have {
   text-align: center;
@@ -2047,7 +2319,7 @@
 .popular__swiper--slider--text--price--cost {
   font-size: 1rem;
   color: #BEAD8E;
-  margin-right: 24px;
+  margin-right: 1.5em;
   display: flex;
 }
 .popular__swiper--slider--text--price--cost p {
@@ -2142,6 +2414,12 @@ html,
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+@media screen and (min-width: 62.5rem) {
+  html,
+  * {
+    overflow-x: visible;
+  }
 }
 
 body {

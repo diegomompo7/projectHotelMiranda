@@ -8,7 +8,7 @@
     justify-content: center;
     padding-right: 6.5%;
     padding-top: 6.25em;
-    margin-top: 8.1875em;
+    padding-bottom: 6.25em;
 
   }
 
@@ -120,9 +120,10 @@
       & li {
         width: 70%;
         padding-bottom: 2.5em;
-        margin-right: 8.9375em;
+        margin-right: 4.4375em;
 
         @include desktop(){
+          margin-right: 8.9375em;
           padding-bottom: 2em;
         }
      

@@ -1,6 +1,10 @@
 .popular{
     background-color: $fourth-color;
     text-align: center;
+    @include desktop(){
+      padding-bottom: 7.5em;
+      margin-bottom: 7.5em;
+    }
 
     &__subtitle {
         font-size: 0.875rem;
@@ -17,11 +21,22 @@
         padding-top: 0.625em;
         padding-bottom: 1.2em;
         color: $first-color;
+
+        @include desktop(){
+          font-size: 5rem;
+          padding-top: 1.1875em;
+          padding-bottom: 0.875em;
+        }
       }
       &__swiper {
         text-align: center;
         width: 89.3%;
-        max-width: 370px;
+        max-width: 23.125em;
+
+        @include desktop(){
+          width: 100%;
+          max-width: 73.125em;
+        }
       
 
         --swiper-navigation-top-offset: 30.6%;
@@ -48,6 +63,10 @@
         &--slider {
             background-color: $first-color;
             margin-bottom: 3rem;
+
+            @include desktop{
+              width: 23.125em;
+            }
     
     
            &--have{
@@ -92,7 +111,7 @@
               &--cost {
                 font-size: 1rem;
                 color: $third-color;
-                margin-right: 24px;
+                margin-right: 1.5em;
                 display: flex;
                 & p {
                   align-self: flex-end;

@@ -1,11 +1,11 @@
-const swiper = new Swiper('.mySwiper', {
+const swiper = new Swiper('.swiperNav', {
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+     },
+ });
 
-const swiperFeatures = new Swiper('.features__swiper', {
+ const swiperFeatures = new Swiper('.features__swiper', {
     slidesPerView: 1,
     centeredSlides: true,
     spaceBetween: 30,
@@ -18,6 +18,7 @@ const swiperFeatures = new Swiper('.features__swiper', {
     },
 
 });
+
 
 const swiperMenu = new Swiper('.menu__items', {
     slidesPerView: 1,
@@ -44,21 +45,15 @@ const swiperPag = new Swiper('.swiperPag', {
       },
 });
 
-
-
 document.onscroll = () => {
     const width = document.body.offsetWidth
+    console.log(width)
     if (width >= 1000) {
         swiper.params.slidesPerView = 2
         swiper.params.centeredSlides = true
         swiper.params.spaceBetween = 30
         swiper.update()
 
-        swiperFeatures.params.slidesPerView = 3
-        swiperFeatures.params.grid.rows = 2
-        swiperFeatures.params.grid.fill = "row"
-        swiperFeatures.params.centeredSlides = false
-        swiperFeatures.update()
 
         swiperMenu.params.slidesPerView = 2
         swiperMenu.params.slidesPerGroup= 6
@@ -67,21 +62,26 @@ document.onscroll = () => {
         swiperMenu.params.centeredSlides = false
         swiperMenu.update()
 
+        swiperFeatures.params.slidesPerView = 3
+        swiperFeatures.params.grid.rows = 2
+        swiperFeatures.params.grid.fill = "row"
+        swiperFeatures.params.centeredSlides = false
+        swiperFeatures.update()
+
         swiperPag.params.slidesPerView = 3;
         swiperPag.params.spaceBetween = 30
         swiperPag.params.pagination.clickable = false
         swiperPag.update()
-    
 
     } else {
+
         swiper.params.slidesPerView = 1;
         swiper.params.centeredSlides = false;
         swiper.params.spaceBetween = 0
         swiper.update()
 
         swiperFeatures.params.slidesPerView = 1
-        swiperFeatures.params.slidesPerGroup= 1
-        swiperFeatures.params.grid.rows = 3
+        swiperFeatures.params.grid.rows = 1
         swiperFeatures.params.centeredSlides = true
         swiperFeatures.update()
 
@@ -96,7 +96,6 @@ document.onscroll = () => {
         swiperPag.params.spaceBetween = 0
         swiperPag.params.pagination.clickable = true
         swiperPag.update()
-    
+
     }
 }
-

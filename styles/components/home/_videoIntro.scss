@@ -8,7 +8,7 @@
         display: grid;
         padding-bottom: 3.125em;
         grid-template-rows: auto;
-        grid-auto-columns: 60%;
+        grid-auto-columns: 55%;
 
     }
 
@@ -18,8 +18,8 @@
             grid-row: 1;
 
             position: absolute;
-            right: 50%;
-            transform: translateX(15%);
+            right: 55%;
+            transform: translateX(25%);
 
             width: 36.875em;
             height: 30.25em;
@@ -81,6 +81,7 @@
             max-width: 35.625em;
             min-width: 21.875em;
             height: 28.75em;
+            object-fit: fill;
             margin-top: 7.5em;
         }
 
@@ -106,7 +107,7 @@
             margin-bottom:  0;
             width:15.42em;
             height: 4.28em;
-            right:  50%;
+            right:  52%;
             position: absolute;
             transform: translateX(-132%);
             align-self: flex-end;

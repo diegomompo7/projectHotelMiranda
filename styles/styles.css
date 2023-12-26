@@ -299,7 +299,6 @@
 .header__nav a {
   padding: 0 0.68em;
   text-decoration: none;
-  background-color: aqua;
   pointer-events: initial;
 }
 .header__nav--home, .header__nav p {
@@ -2142,6 +2141,13 @@ html,
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 62.5rem) {
+  html,
+  * {
+    overflow-x: visible;
+  }
 }
 
 body {

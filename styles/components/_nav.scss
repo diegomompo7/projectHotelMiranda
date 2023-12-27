@@ -2,19 +2,35 @@
     background-color: $fourth-color;
     z-index: 2;
     position: relative;
+
+    @include desktop(){
+        height: 100px;
+    }
+
+    &__text{
+        color: $first-color;
+        font-size: 1rem;
+        display: none;
+
+        @include desktop(){
+            display: block;
+            margin-left: 12.5%;
+            padding-top: 11px;
+        }
+    }
 }
 
 .nav{
     display: flex;
     height: 4.375rem;
-    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.29);
+    box-shadow: 0 0.1875em 0.375em 0 rgba(0,0,0,0.29);
     background-color: $first-color;
 
     @include desktop(){
         max-width: 88.75em;
         height: 7.5em;
         margin: 0 auto;
-        transform: translateY(50%);
+        transform: translateY(10%);
         align-items: center;
         
     }
@@ -95,7 +111,7 @@
             background-color: $first-color;
 
             @include desktop(){
-            border: 2px solid $sixtheenth-color;
+            border: 0.125em solid $sixtheenth-color;
             width: 3.75em;
             height: 3.75em;
             padding: 1.125em;
@@ -107,7 +123,7 @@
         &--user{
             background-color: $first-color;
             @include desktop(){
-                border: 2px solid $sixtheenth-color;
+                border: 0.125em solid $sixtheenth-color;
                 box-sizing: border-box;
                 width: 3.75em;
                 height: 3.75em;

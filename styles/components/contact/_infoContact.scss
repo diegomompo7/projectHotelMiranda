@@ -1,11 +1,23 @@
 .infoContact{
-    margin-top: 6px;
+    margin-top: 0.375em;
+
+    @include desktop(){
+        width: 100%;
+        display: flex;
+        max-width: 76.125em;
+        margin: 7.4375em auto 0;
+    }
 
     &__items{
         width: 94%;
-        max-width: 406px;
-        height: 236px;
+        max-width: 25.375em;
+        height: 14.75em;
         margin: 0 auto;
+
+        @include desktop(){
+            margin-right: 2.9375em;
+        }
+
         
         &--number{
             width:1em;
@@ -34,13 +46,13 @@
                 font-family: "Old Standard TT";
                 font-weight: 400;
                 padding-bottom: 1.6em
-            };
+            }
             & p {
                 font-size: 0.875em;
                 padding-left: 1.929em;
                 font-family: "Roboto";
                 font-weight: 400
-            };
+            }
         }
     }
     }

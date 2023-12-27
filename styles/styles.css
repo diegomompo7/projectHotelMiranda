@@ -7,11 +7,28 @@
   z-index: 2;
   position: relative;
 }
+@media screen and (min-width: 62.5rem) {
+  .desktop-nav {
+    height: 100px;
+  }
+}
+.desktop-nav__text {
+  color: #FFFFFF;
+  font-size: 1rem;
+  display: none;
+}
+@media screen and (min-width: 62.5rem) {
+  .desktop-nav__text {
+    display: block;
+    margin-left: 12.5%;
+    padding-top: 11px;
+  }
+}
 
 .nav {
   display: flex;
   height: 4.375rem;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+  box-shadow: 0 0.1875em 0.375em 0 rgba(0, 0, 0, 0.29);
   background-color: #FFFFFF;
 }
 @media screen and (min-width: 62.5rem) {
@@ -19,7 +36,7 @@
     max-width: 88.75em;
     height: 7.5em;
     margin: 0 auto;
-    transform: translateY(50%);
+    transform: translateY(10%);
     align-items: center;
   }
 }
@@ -92,7 +109,7 @@
 }
 @media screen and (min-width: 62.5rem) {
   .nav__options--search {
-    border: 2px solid #858585;
+    border: 0.125em solid #858585;
     width: 3.75em;
     height: 3.75em;
     padding: 1.125em;
@@ -103,7 +120,7 @@
 }
 @media screen and (min-width: 62.5rem) {
   .nav__options--user {
-    border: 2px solid #858585;
+    border: 0.125em solid #858585;
     box-sizing: border-box;
     width: 3.75em;
     height: 3.75em;
@@ -175,8 +192,8 @@
   .footer {
     display: flex;
     justify-content: space-between;
-    padding-top: 29px;
-    padding-bottom: 24px;
+    padding-top: 1.815em;
+    padding-bottom: 1.5em;
   }
 }
 .footer__copy {
@@ -272,7 +289,7 @@
 .header__options--more {
   margin-bottom: 5.714em;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.33);
+  border: 0.0625em solid rgba(255, 255, 255, 0.33);
   font-weight: 700;
 }
 .header__nav {
@@ -291,7 +308,7 @@
 }
 @media screen and (min-width: 62.5rem) {
   .header__nav {
-    width: 12.5em;
+    width: 13.7em;
     margin-right: 19.5%;
     z-index: 5;
   }
@@ -507,7 +524,7 @@
   flex-direction: column;
   color: #FFFFFF;
   font-family: "Roboto";
-  border-bottom: 1px solid #BEAD8E;
+  border-bottom: 0.0625em solid #BEAD8E;
 }
 @media screen and (min-width: 25.3125rem) {
   .check__form label {
@@ -677,7 +694,7 @@
 .aboutUs__strong--text {
   text-align: center;
   padding-top: 3.375rem;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.25em 0.25em 0 rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 62.5rem) {
   .aboutUs__strong--text {
@@ -1710,10 +1727,48 @@
   padding: 0.857em 1.143em;
 }
 
-.firstDescription {
-  width: 89.3%;
+.secondDescription__text {
+  white-space: break-word;
+  font-size: 0.875rem;
+  font-family: "Roboto";
+  margin: 1.714em auto 4.286em auto;
+  padding: 0 1.429em;
+  line-height: 1.714em;
+  color: #777777;
+  max-width: 54.928em;
 }
-.firstDescription__text--subtitle {
+@media screen and (min-width: 62.5rem) {
+  .secondDescription__text {
+    max-width: 48.0625em;
+    font-size: 1rem;
+    margin: 0 0 2.6875em 19.5%;
+    padding: 0;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (min-width: 62.5rem) {
+  .statsReserve {
+    width: 100%;
+    display: flex;
+    max-width: 73.4375em;
+    margin: 0 auto;
+  }
+}
+.statsReserve__stats--firstDescription {
+  width: 89.3%;
+  max-width: 45.625em;
+}
+@media screen and (min-width: 62.5rem) {
+  .statsReserve__stats--firstDescription {
+    width: 45.625em;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 3.125em;
+    display: flex;
+  }
+}
+.statsReserve__stats--firstDescription--text h3 {
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.2em;
@@ -1722,7 +1777,12 @@
   padding-left: 1.429em;
   color: #777777;
 }
-.firstDescription__text--title {
+@media screen and (min-width: 62.5rem) {
+  .statsReserve__stats--firstDescription--text h3 {
+    margin-left: 3.5em;
+  }
+}
+.statsReserve__stats--firstDescription--text h1 {
   font-size: 2.5rem;
   font-weight: 400;
   font-family: "Old Standard TT";
@@ -1731,7 +1791,18 @@
   color: #222222;
   padding-left: 0.5em;
 }
-.firstDescription__price {
+@media screen and (min-width: 62.5rem) {
+  .statsReserve__stats--firstDescription--text h1 {
+    font-size: 3em;
+    margin-left: 0.729em;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .statsReserve__stats--firstDescription--price {
+    margin-left: auto;
+  }
+}
+.statsReserve__stats--firstDescription--price h1 {
   font-family: "Archivo";
   font-size: 2rem;
   color: #BEAD8E;
@@ -1740,29 +1811,47 @@
   display: flex;
   padding-left: 0.625em;
 }
-.firstDescription__price p {
+@media screen and (min-width: 62.5rem) {
+  .statsReserve__stats--firstDescription--price h1 {
+    font-size: 2.5rem;
+    margin-top: 0.75em;
+  }
+}
+.statsReserve__stats--firstDescription--price h1 p {
   font-size: 0.815rem;
   align-self: flex-end;
   margin-bottom: 0.462em;
 }
-
-.roomDetail__img {
+@media screen and (min-width: 62.5rem) {
+  .statsReserve__stats--firstDescription--price h1 p {
+    font-size: 1rem;
+    margin-right: 2.75em;
+  }
+}
+.statsReserve__stats--img {
   width: 89.3%;
   padding-left: 1.25em;
+  max-width: 48.125em;
 }
-
-.secondDescription__text {
-  white-space: break-word;
-  font-size: 0.875rem;
-  font-family: "Roboto";
-  margin-top: 1.714em;
-  padding: 0 1.429em;
-  line-height: 1.714em;
-  color: #777777;
-  margin-bottom: 4.286em;
+@media screen and (min-width: 62.5rem) {
+  .statsReserve__stats--img {
+    padding: 0;
+    width: 48.125em;
+  }
 }
-
-.reserve__title {
+.statsReserve__reserve {
+  width: 100%;
+  max-width: 23.125em;
+  margin: 0 auto;
+}
+@media screen and (min-width: 62.5rem) {
+  .statsReserve__reserve {
+    margin: 0;
+    margin-top: 1.875em;
+    margin-left: auto;
+  }
+}
+.statsReserve__reserve--title {
   font-size: 1.125rem;
   font-family: "Archivo";
   color: #222222;
@@ -1771,21 +1860,21 @@
   padding-top: 1.389em;
   margin-bottom: 2em;
 }
-.reserve__form {
+.statsReserve__reserve--form {
   width: 77.6%;
   margin: 0 auto;
 }
-.reserve__form--label {
+.statsReserve__reserve--form--label {
   font-size: 0.875rem;
   font-family: "Archivo";
   font-weight: 700;
   color: #222222;
 }
-.reserve__form--label div {
+.statsReserve__reserve--form--label div {
   padding-top: 0.929em;
   margin-bottom: 1.5em;
 }
-.reserve__form--label div input {
+.statsReserve__reserve--form--label div input {
   font-size: 0.875rem;
   font-family: "Archivo";
   padding: 0 2.143em;
@@ -1794,7 +1883,7 @@
   border: none;
   background-color: #F8F8F8;
 }
-.reserve__form--button {
+.statsReserve__reserve--form--button {
   width: 100%;
   font-size: 0.875rem;
   font-family: "Archivo";
@@ -1811,6 +1900,13 @@
   height: auto;
   margin: 0 auto;
   margin-bottom: 1.5rem;
+  max-width: 48.125em;
+}
+@media screen and (min-width: 62.5rem) {
+  .amenities {
+    margin-bottom: 7.6875em;
+    margin-left: 19.5%;
+  }
 }
 .amenities__title {
   font-size: 1.875rem;
@@ -1820,14 +1916,19 @@
   color: #222222;
 }
 .amenities__line {
-  border: 1px solid #F1F1F1;
+  border: 0.0625em solid #F1F1F1;
   margin-bottom: 1.688em;
 }
 .amenities__items {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 260px;
+  height: 16.25em;
+}
+@media screen and (min-width: 62.5rem) {
+  .amenities__items {
+    height: 11.25em;
+  }
 }
 .amenities__items--have {
   display: flex;
@@ -1844,9 +1945,15 @@
 
 .userInfo {
   width: 89.3%;
-  max-width: 370px;
+  max-width: 23.125em;
   margin: 0 auto;
   text-align: center;
+}
+@media screen and (min-width: 62.5rem) {
+  .userInfo {
+    box-shadow: 0 0.875em 1.5em 0 rgba(190, 173, 142, 0.28);
+    margin-left: 19.5%;
+  }
 }
 .userInfo__img {
   margin-top: 1.25rem;
@@ -1856,10 +1963,10 @@
 }
 .userInfo__circle {
   background-color: #BDAC8D;
-  width: 46px;
-  height: 46px;
+  width: 2.875em;
+  height: 2.875em;
   border-radius: 50%;
-  border: solid 4px #FFFFFF;
+  border: solid 0.25em #FFFFFF;
   padding-top: 0.688rem;
   margin: 0 auto;
   transform: translate(3.438rem, 3.75rem);
@@ -1884,14 +1991,23 @@
 .userInfo__description {
   text-align: center;
   font-family: "Archivo";
+  font-size: 1rem;
   line-height: 1.5em;
   color: #777777;
   padding-bottom: 2.563em;
+  margin: 0 auto;
+  width: 85%;
 }
 
 .cancel {
   width: 89.3%;
   margin: 0 auto;
+  max-width: 48.125em;
+}
+@media screen and (min-width: 62.5rem) {
+  .cancel {
+    margin-left: 19.5%;
+  }
 }
 .cancel__title {
   font-size: 1.875rem;
@@ -1900,8 +2016,13 @@
   padding-bottom: 0.433em;
   color: #222222;
 }
+@media screen and (min-width: 62.5rem) {
+  .cancel__title {
+    margin-top: 1.566em;
+  }
+}
 .cancel__line {
-  border: 1px solid #F1F1F1;
+  border: 0.0625em solid #F1F1F1;
 }
 .cancel__text {
   white-space: break-word;
@@ -1912,10 +2033,23 @@
   color: #777777;
   margin-bottom: 4.286em;
 }
+@media screen and (min-width: 62.5rem) {
+  .cancel__text {
+    width: 86%;
+    margin-bottom: 7.6875em;
+  }
+}
 
 .related {
   width: 89.3%;
   margin: 0 auto;
+  max-width: 46.25em;
+}
+@media screen and (min-width: 62.5rem) {
+  .related {
+    margin-left: 19.5%;
+    margin-bottom: 7.6875em;
+  }
 }
 .related__title {
   font-size: 1.875rem;
@@ -1925,13 +2059,18 @@
   color: #222222;
 }
 .related__line {
-  border: 1px solid #F1F1F1;
+  border: 0.0625em solid #F1F1F1;
   margin-bottom: 2.313rem;
 }
 .related__swiper {
   text-align: center;
-  max-width: 370px;
+  max-width: 23.125;
   --swiper-navigation-top-offset: 22.6%;
+}
+@media screen and (min-width: 62.5rem) {
+  .related__swiper {
+    max-width: 46.25em;
+  }
 }
 .related__swiper .swiper-button-next, .related__swiper .swiper-button-prev {
   color: #111111;
@@ -1953,7 +2092,7 @@
   display: inline-block;
   padding: 0.75rem 0;
   padding-left: 1rem;
-  transform: translateY(-20px);
+  transform: translateY(-1.25em);
 }
 .related__swiper--slider--have svg {
   margin-right: 1rem;
@@ -1986,7 +2125,7 @@
 .related__swiper--slider--text--price--cost {
   font-size: 1rem;
   color: #BEAD8E;
-  margin-right: 24px;
+  margin-right: 1.5em;
   display: flex;
 }
 .related__swiper--slider--text--price--cost p {
@@ -2047,7 +2186,7 @@
 }
 .offers__items--card--info hr {
   display: none;
-  border: 1px solid #ECECEC;
+  border: 0.0625em solid #ECECEC;
 }
 @media screen and (min-width: 62.5rem) {
   .offers__items--card--info hr {
@@ -2338,13 +2477,26 @@
 }
 
 .infoContact {
-  margin-top: 6px;
+  margin-top: 0.375em;
+}
+@media screen and (min-width: 62.5rem) {
+  .infoContact {
+    width: 100%;
+    display: flex;
+    max-width: 76.125em;
+    margin: 7.4375em auto 0;
+  }
 }
 .infoContact__items {
   width: 94%;
-  max-width: 406px;
-  height: 236px;
+  max-width: 25.375em;
+  height: 14.75em;
   margin: 0 auto;
+}
+@media screen and (min-width: 62.5rem) {
+  .infoContact__items {
+    margin-right: 2.9375em;
+  }
 }
 .infoContact__items--number {
   width: 1em;
@@ -2384,6 +2536,42 @@
   width: 89%;
   margin: 0 auto;
   text-align: center;
+  max-width: 29.375em;
+}
+@media screen and (min-width: 62.5rem) {
+  .formContact {
+    max-width: 60.625em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.formContact__input {
+  width: 100%;
+}
+@media screen and (min-width: 62.5rem) {
+  .formContact__input {
+    width: 48%;
+    margin-right: 0.9375em;
+    margin-bottom: 1.875em;
+  }
+}
+.formContact__input svg {
+  position: absolute;
+  transform: translate(200%, 200%);
+}
+.formContact__textarea {
+  width: 100%;
+}
+@media screen and (min-width: 62.5rem) {
+  .formContact__textarea {
+    width: 100%;
+    margin-right: 0.9375em;
+  }
+}
+.formContact__textarea svg {
+  position: absolute;
+  transform: translate(200%, 200%);
 }
 .formContact input, .formContact textarea {
   width: 100%;
@@ -2395,7 +2583,7 @@
   font-family: "Roboto";
 }
 .formContact__button {
-  width: 64.4%;
+  width: 18.428em;
   font-size: 0.875rem;
   font-family: "Archivo";
   font-weight: 700;

@@ -79,7 +79,7 @@
         &--more{
             margin-bottom: 5.714em;
             background-color: transparent;
-            border: 1px solid rgba($color: $first-color, $alpha: 0.33);
+            border: 0.0625em solid rgba($color: $first-color, $alpha: 0.33);
             font-weight: 700;
         }
     }
@@ -97,7 +97,7 @@
         font-weight: 700;
 
         @include desktop(){
-            width: 12.5em;
+            width: 13.7em;
             margin-right: 19.5%;
             z-index: 5;
         }

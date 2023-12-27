@@ -21,7 +21,7 @@
             flex-direction: column;
             color: $first-color;
             font-family: 'Roboto';
-            border-bottom: 1px solid $third-color;
+            border-bottom: 0.0625em solid $third-color;
 
             @include min405() {
                 width: 20.625em;

@@ -2,6 +2,22 @@
     background-color: $fourth-color;
     z-index: 2;
     position: relative;
+
+    @include desktop(){
+        height: 100px;
+    }
+
+    &__text{
+        color: $first-color;
+        font-size: 1rem;
+        display: none;
+
+        @include desktop(){
+            display: block;
+            margin-left: 12.5%;
+            padding-top: 11px;
+        }
+    }
 }
 
 .nav{
@@ -14,7 +30,7 @@
         max-width: 88.75em;
         height: 7.5em;
         margin: 0 auto;
-        transform: translateY(50%);
+        transform: translateY(10%);
         align-items: center;
         
     }

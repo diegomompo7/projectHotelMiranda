@@ -29,10 +29,6 @@
                 margin-right: 1.875em;
             }
         }
-        & svg{
-            margin-top: 1.875em;
-            color: black;
-        }
 
         & input{
             background-color: transparent;
@@ -42,7 +38,8 @@
             font-size: 0.875rem;
             font-family: 'Roboto';
             margin-bottom: 1.214em;
-            width: 90%;
+            width: 100%;
+            color-scheme: #BEAD8E;
         }
 
         &--arrival{
@@ -79,4 +76,9 @@
             }
         }
     }
+}
+::-webkit-calendar-picker-indicator {
+    filter: 
+    brightness(0) saturate(100%) invert(78%) sepia(3%) saturate(2671%) hue-rotate(2deg) brightness(89%) contrast(91%)
+    
 }

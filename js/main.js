@@ -36,6 +36,10 @@ const sendAlert = () => {
     alert("¡Thank you for your request! We have received it correctly. Someone from our Team will get back to you very soon.The Miranda Hotel")
 }
 
+const sendAlertContact = () => {
+    alert("¡Thank you for your message! We have received it correctly. Someone from our Team will get back to you very soon.The Miranda Hotel")
+}
+
 document.body.addEventListener("mousemove", (event) => {
 
     const nav= document.getElementsByClassName("nav")

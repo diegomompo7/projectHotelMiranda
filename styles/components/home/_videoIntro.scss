@@ -99,6 +99,8 @@
         margin-top: 3.571em;
         border: none;
         margin-bottom: 3.429em;
+        text-align: center;
+        text-decoration: none;
 
         @include desktop(){
             
@@ -107,11 +109,11 @@
             margin-bottom:  0;
             width:15.42em;
             height: 4.28em;
-            right:  52%;
+            right:  55.7%;
             position: absolute;
-            transform: translateX(-132%);
+            transform: translateX(-100%);
             align-self: flex-end;
-            margin-left: auto;
+
         }
     }
 }
